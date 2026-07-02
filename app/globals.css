@@ -1,0 +1,156 @@
+:root{
+  /* Cream "desert modern" palette. Variable names kept for compatibility:
+     --ink = page background (now cream), --paper = primary text (now dark) */
+  --ink:#F4EFE4;           /* warm cream — page background */
+  --panel:#ECE5D6;         /* soft plaster — cards / raised surfaces */
+  --panel-2:#E4DBC8;       /* deeper plaster — inputs */
+  --line:#D8CDB8;          /* warm hairline borders */
+  --paper:#2A2620;         /* warm near-black — primary text */
+  --paper-dim:#6B6355;     /* muted brown — secondary text */
+  --paper-mute:#948A78;    /* soft taupe — tertiary text */
+  --accent:#7A8B3F;        /* deepened olive — reads on cream */
+  --accent-deep:#5E6B2E;   /* darkest olive — hovers / small accents */
+  --radius:14px;
+  --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Inter',system-ui,sans-serif;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.mono{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
+
+/* ---- nav ---- */
+nav{position:sticky;top:0;z-index:50;background:rgba(244,239,228,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Fraunces',serif;font-weight:600;font-size:21px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.logo .mark{width:30px;height:30px;flex-shrink:0}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:var(--paper-dim);text-decoration:none;font-size:14px;transition:color .2s}
+.nav-links a:hover{color:var(--paper)}
+.nav-cta{background:var(--accent);color:var(--ink)!important;padding:9px 18px;border-radius:8px;font-weight:600;font-size:14px}
+.nav-cta:hover{background:var(--accent-deep)}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+
+/* ---- hero ---- */
+.hero{padding:72px 0 56px;position:relative}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:22px}
+h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,6.4vw,68px);line-height:1.02;letter-spacing:-.02em;max-width:15ch}
+h1 em{font-style:italic;color:var(--accent)}
+.hero-sub{margin-top:22px;font-size:18px;color:var(--paper-dim);max-width:50ch}
+.hero-actions{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .12s,background .2s}
+.btn-primary{background:var(--accent);color:var(--ink)}
+.btn-primary:hover{background:var(--accent-deep);transform:translateY(-1px)}
+.btn-ghost{color:var(--paper);border:1px solid var(--line);background:transparent}
+.btn-ghost:hover{border-color:var(--paper-mute)}
+
+/* ---- proof: three verticals ---- */
+.proof{margin-top:58px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,var(--panel),var(--ink));overflow:hidden}
+.proof-head{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-mute);letter-spacing:.04em}
+.proof-head .live{display:flex;align-items:center;gap:7px;color:var(--accent-deep)}
+.proof-head .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(122,139,63,.5)}70%{box-shadow:0 0 0 8px rgba(122,139,63,0)}100%{box-shadow:0 0 0 0 rgba(122,139,63,0)}}
+.proof-body{display:grid;grid-template-columns:repeat(3,1fr)}
+@media(max-width:720px){.proof-body{grid-template-columns:1fr}}
+.proof-cell{padding:30px 26px;border-right:1px solid var(--line)}
+.proof-cell:last-child{border-right:0}
+@media(max-width:720px){.proof-cell{border-right:0;border-bottom:1px solid var(--line)}.proof-cell:last-child{border-bottom:0}}
+.proof-vert{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--paper-mute);margin-bottom:14px}
+.proof-number{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,7vw,58px);line-height:1;color:var(--accent);letter-spacing:-.02em}
+.proof-number .cur{font-size:.5em;vertical-align:top;color:var(--paper-dim);margin-right:1px}
+.proof-metric{margin-top:8px;font-size:13.5px;color:var(--paper-dim)}
+.proof-vs{margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-mute)}
+.proof-foot{padding:14px 22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--paper-mute);font-family:'IBM Plex Mono',monospace}
+
+/* ---- section scaffolding ---- */
+section{padding:80px 0}
+.sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-mute);margin-bottom:16px}
+h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;line-height:1.08;max-width:20ch}
+.sec-lede{margin-top:16px;color:var(--paper-dim);max-width:52ch;font-size:17px}
+
+/* ---- services ---- */
+.svc-grid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+@media(max-width:720px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--ink);padding:28px 26px;transition:background .2s}
+.svc:hover{background:var(--panel)}
+.svc .ix{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent-deep);margin-bottom:14px}
+.svc h3{font-family:'Fraunces',serif;font-weight:500;font-size:21px;margin-bottom:8px}
+.svc p{font-size:14.5px;color:var(--paper-dim);line-height:1.55}
+
+/* ---- pricing ---- */
+.tiers{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:880px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:var(--panel);display:flex;flex-direction:column;position:relative}
+.tier.feat{border-color:var(--accent);background:linear-gradient(180deg,rgba(122,139,63,.08),var(--panel))}
+.tier-tag{position:absolute;top:-11px;left:26px;background:var(--accent);color:var(--ink);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em}
+.tier-name{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-mute)}
+.tier-price{font-family:'Fraunces',serif;font-weight:500;font-size:42px;margin:14px 0 2px;letter-spacing:-.02em}
+.tier-price .per{font-size:15px;color:var(--paper-mute);font-family:'Inter',sans-serif}
+.tier-desc{font-size:13.5px;color:var(--paper-dim);min-height:40px;margin-bottom:18px}
+.tier ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px;flex:1}
+.tier li{font-size:14px;color:var(--paper-dim);padding-left:24px;position:relative}
+.tier li::before{content:"→";position:absolute;left:0;color:var(--accent-deep);font-family:'IBM Plex Mono',monospace}
+.tier .btn{width:100%;justify-content:center}
+.tier-note{margin-top:22px;text-align:center;font-size:13px;color:var(--paper-mute);font-family:'IBM Plex Mono',monospace}
+
+/* ---- form ---- */
+.cta-sec{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+@media(max-width:820px){.cta-grid{grid-template-columns:1fr;gap:36px}}
+.cta-left h2{max-width:16ch}
+.cta-points{margin-top:26px;display:flex;flex-direction:column;gap:16px}
+.cta-point{display:flex;gap:12px;font-size:15px;color:var(--paper-dim)}
+.cta-point .k{color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:13px;flex-shrink:0;padding-top:1px}
+form{background:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.fld{margin-bottom:18px}
+.fld label{display:block;font-size:13px;color:var(--paper-dim);margin-bottom:7px;font-weight:500}
+.fld input,.fld select{width:100%;background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:12px 14px;color:var(--paper);font-size:15px;font-family:'Inter',sans-serif;transition:border-color .2s}
+.fld input::placeholder{color:var(--paper-mute)}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--accent)}
+.fld select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23948A78' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:480px){.row2{grid-template-columns:1fr}}
+form .btn{width:100%;justify-content:center;margin-top:6px;font-size:16px;padding:15px}
+.form-fine{margin-top:14px;font-size:12px;color:var(--paper-mute);text-align:center}
+.form-success{display:none;text-align:center;padding:40px 20px}
+.form-success .check{width:54px;height:54px;border-radius:50%;background:var(--accent);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 18px}
+.form-success h3{font-family:'Fraunces',serif;font-weight:500;font-size:24px;margin-bottom:8px}
+.form-success p{color:var(--paper-dim);font-size:15px;max-width:34ch;margin:0 auto}
+.form-error{display:none;margin-top:12px;font-size:13px;color:#E88;text-align:center}
+
+/* ---- footer ---- */
+footer{padding:46px 0;text-align:center;position:relative}
+.foot-logo{font-family:'Fraunces',serif;font-size:18px;margin-bottom:8px}
+footer p{font-size:13px;color:var(--paper-mute)}
+
+/* ---- decorative yucca motifs (minimal, restrained) ---- */
+section, header{position:relative;overflow:hidden}
+.yucca-bg{position:absolute;pointer-events:none;z-index:0;color:var(--accent);opacity:.07}
+.yucca-bg svg{display:block;width:100%;height:100%}
+/* keep all real content above the motif */
+header .wrap, section .wrap{position:relative;z-index:1}
+/* large faint yucca bleeding off the hero's right edge */
+.yucca-hero{top:40px;right:-90px;width:340px;height:440px}
+/* faint yucca low-left behind the pricing block */
+.yucca-pricing{bottom:-60px;left:-70px;width:300px;height:380px;opacity:.06}
+/* small centered divider mark between sections */
+.yucca-divider{display:flex;justify-content:center;align-items:center;gap:14px;padding:0 0 4px;color:var(--accent);opacity:.5}
+.yucca-divider svg{width:26px;height:34px}
+.yucca-divider .rule{width:46px;height:1px;background:var(--line)}
+/* small motif flanking the footer logo */
+.yucca-foot{width:26px;height:26px;color:var(--accent);opacity:.7;margin:0 auto 10px;display:block}
+@media(max-width:720px){
+  .yucca-hero{width:210px;height:270px;right:-70px;top:80px;opacity:.05}
+  .yucca-pricing{display:none}
+}
+@media(prefers-reduced-motion:no-preference){
+  .yucca-bg{transition:opacity .6s ease}
+}
