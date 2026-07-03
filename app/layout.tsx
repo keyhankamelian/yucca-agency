@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 // Canonical site URL — used to resolve OG/Twitter image paths to absolute URLs.
-// On Vercel this resolves automatically to the production domain; falls back to
-// localhost in dev. Override with NEXT_PUBLIC_SITE_URL once a custom domain is set.
+// Production uses the custom domain; dev falls back to localhost. Can be
+// overridden with NEXT_PUBLIC_SITE_URL (e.g. for preview deployments).
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  (process.env.NODE_ENV === 'production'
+    ? 'https://yuccaagency.com'
     : 'http://localhost:3000');
 
 const title = 'Yucca Agency — Performance marketing that beats the benchmark';
