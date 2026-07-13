@@ -183,10 +183,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Signature element: three real results across three industries */}
+          {/* Signature element: four real results across four industries */}
           <div className="proof" id="proof" style={{ marginTop: '44px' }}>
             <div className="proof-head">
-              <span>CASE FILES · THREE INDUSTRIES · REAL CAMPAIGNS</span>
+              <span>CASE FILES · FOUR INDUSTRIES · REAL CAMPAIGNS</span>
               <span className="live">VERIFIED RESULTS</span>
             </div>
             <div className="proof-body">
@@ -219,6 +219,14 @@ export default function Home() {
                   cost per DSP stream · 22%+ CTR · US + global
                 </div>
                 <div className="proof-vs">industry avg ~$0.65 · ~89% lower</div>
+              </div>
+              <div className="proof-cell">
+                <div className="proof-vert">Contractor · Meta Ads</div>
+                <div className="proof-number">4x</div>
+                <div className="proof-metric">
+                  return on ad spend · 32 leads · $1,000 spend · 1 month
+                </div>
+                <div className="proof-vs">≈$31 cost per lead</div>
               </div>
             </div>
             <div className="proof-foot">
