@@ -69,8 +69,8 @@ export default function Home() {
         <div className="wrap">
           <div className="eyebrow">Paid social ads · Los Angeles</div>
           <h1>
-            We don&apos;t just run ads. We build the creative that makes them{' '}
-            <em>work</em>.
+            We don&apos;t market your business. We <em>outgrow</em> your
+            competition.
           </h1>
           <p className="hero-sub">
             Paid social campaigns for dentists, lawyers, contractors, gyms,
