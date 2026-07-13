@@ -67,15 +67,17 @@ export default function Home() {
           </svg>
         </div>
         <div className="wrap">
-          <div className="eyebrow">Performance marketing · Los Angeles</div>
+          <div className="eyebrow">Paid social ads · Los Angeles</div>
           <h1>
-            We don&apos;t market your business. We <em>outgrow</em> your
-            competition.
+            We don&apos;t just run ads. We build the creative that makes them{' '}
+            <em>work</em>.
           </h1>
           <p className="hero-sub">
-            Paid ads, SEO, landing pages, and content strategy — built and
-            managed by one team measured on the only thing that matters: your
-            cost per customer.
+            Paid social campaigns for dentists, lawyers, contractors, gyms,
+            salons, spas, therapists, and ecommerce brands — run by people who
+            know the platforms, follow the trends, and have an eye for what
+            actually stops the scroll. SEO and landing pages available if you
+            need them.
           </p>
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
@@ -88,65 +90,96 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="services">
+      <section id="who-for">
         <div className="wrap">
-          <div className="sec-eyebrow">What we run</div>
-          <h2>
-            One team across the whole funnel — not five vendors who blame each
-            other.
-          </h2>
-          <p className="sec-lede">
-            Most businesses stitch together an ads person, an SEO person, and a
-            web person who never talk. We own the path from click to customer,
-            so nothing falls between the cracks.
-          </p>
+          <div className="sec-eyebrow">Is this you?</div>
+          <h2>Built for businesses who&apos;ve tried everything except this.</h2>
           <div className="svc-grid">
             <div className="svc">
               <div className="ix">01</div>
-              <h3>Paid advertising</h3>
+              <h3>Never run paid social</h3>
               <p>
-                Meta, Google, and TikTok campaigns built around your
-                cost-per-customer target — not vanity reach.
+                You know it works for businesses like yours. You just
+                haven&apos;t had someone set it up right yet.
               </p>
             </div>
             <div className="svc">
               <div className="ix">02</div>
-              <h3>Landing pages</h3>
+              <h3>Tried it — or tried AI — alone</h3>
               <p>
-                Conversion-first pages built and tested so the traffic you pay
-                for actually turns into bookings.
+                You ran the ads yourself, or let an AI tool run them, and the
+                leads never showed up. We know why.
               </p>
             </div>
             <div className="svc">
               <div className="ix">03</div>
-              <h3>SEO</h3>
+              <h3>Priced out by agencies</h3>
               <p>
-                Local and organic search work that compounds — so you stop
-                renting every customer from ad platforms.
+                Most shops won&apos;t talk to you under a $3,000–$5,000
+                monthly retainer. We will.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div className="wrap">
+          <div className="sec-eyebrow">What we run</div>
+          <h2>Paid social is the core. We&apos;ll add the rest if you need it.</h2>
+          <p className="sec-lede">
+            Most agencies hand you a media buyer and leave the creative to
+            you. We combine campaign experience with an eye for what actually
+            performs — and tell you exactly what to shoot.
+          </p>
+          <div className="svc-grid">
+            <div className="svc">
+              <div className="ix">01</div>
+              <h3>Paid social advertising</h3>
+              <p>
+                Meta, Instagram, and TikTok campaigns built around your
+                cost-per-lead target — not vanity reach.
+              </p>
+            </div>
+            <div className="svc">
+              <div className="ix">02</div>
+              <h3>Creative direction</h3>
+              <p>
+                We tell you exactly what to shoot. Send us the footage and
+                we&apos;ll cut it into ads built to perform.
+              </p>
+            </div>
+            <div className="svc">
+              <div className="ix">03</div>
+              <h3>Full production — add-on</h3>
+              <p>
+                Don&apos;t want to shoot it yourself? We can shoot and edit
+                the whole thing, finalized, for a fee.
               </p>
             </div>
             <div className="svc">
               <div className="ix">04</div>
-              <h3>Content strategy</h3>
+              <h3>Trend &amp; AI-assisted targeting</h3>
               <p>
-                A posting system tied to your offers, not a content calendar
-                that looks busy and sells nothing.
+                We pair AI tools with real campaign experience to catch
+                trends and audiences before they&apos;re played out.
               </p>
             </div>
             <div className="svc">
               <div className="ix">05</div>
-              <h3>Consultation</h3>
+              <h3>Landing pages — add-on</h3>
               <p>
-                A clear read on where your money leaks and what to fix first —
-                useful whether or not you hire us.
+                Conversion-first pages built and tested, priced separately if
+                your funnel needs one.
               </p>
             </div>
             <div className="svc">
               <div className="ix">06</div>
-              <h3>Reporting</h3>
+              <h3>SEO — add-on</h3>
               <p>
-                One number-first dashboard. Leads, cost per lead, and what it
-                cost to get them. No fluff slides.
+                Local and organic search work, available add-on for when
+                you&apos;re ready to stop renting every customer from ad
+                platforms.
               </p>
             </div>
           </div>
@@ -235,7 +268,7 @@ export default function Home() {
         </div>
         <div className="wrap">
           <div className="sec-eyebrow">Pricing</div>
-          <h2>Priced on the engagement, not by the hour.</h2>
+          <h2>You don&apos;t need a $3–5k retainer to start.</h2>
           <p className="sec-lede">
             Ad spend is paid directly to the platforms by you and stays separate
             from these fees. A one-time setup fee applies to your first month.
@@ -247,11 +280,12 @@ export default function Home() {
                 $1,000<span className="per">/mo</span>
               </div>
               <div className="tier-desc">
-                For solo operators getting their first channel working.
+                For businesses running their first real paid social campaign.
               </div>
               <ul>
-                <li>One ad platform (Meta or Google)</li>
-                <li>Campaign setup &amp; management</li>
+                <li>One platform (Meta or TikTok)</li>
+                <li>Creative direction — we tell you what to shoot</li>
+                <li>You shoot &amp; edit, we launch &amp; manage</li>
                 <li>Monthly performance report</li>
                 <li>Up to ~$3k ad spend managed</li>
                 <li>One-time setup: $500</li>
@@ -270,9 +304,9 @@ export default function Home() {
                 For businesses ready to scale what&apos;s already converting.
               </div>
               <ul>
-                <li>Two ad platforms</li>
-                <li>Landing page build &amp; optimization</li>
-                <li>Foundational SEO</li>
+                <li>Two platforms (Meta, TikTok, Instagram)</li>
+                <li>Creative direction — we edit your footage</li>
+                <li>Trend &amp; AI-assisted targeting</li>
                 <li>Monthly strategy call</li>
                 <li>Up to ~$10k ad spend managed</li>
                 <li>One-time setup: $750</li>
@@ -290,9 +324,9 @@ export default function Home() {
                 Full-funnel for businesses with serious volume.
               </div>
               <ul>
-                <li>Multi-platform paid ads</li>
-                <li>SEO + content strategy</li>
-                <li>Landing pages &amp; ongoing testing</li>
+                <li>Multi-platform paid social</li>
+                <li>Full production — we shoot &amp; edit for you</li>
+                <li>SEO &amp; landing pages available add-on</li>
                 <li>Biweekly calls &amp; priority support</li>
                 <li>One-time setup: $1,000</li>
               </ul>
@@ -302,9 +336,9 @@ export default function Home() {
             </div>
           </div>
           <p className="tier-note">
-            Standalone landing page build (no retainer): from $1,500 ·
-            Multi-location, e-commerce, or heavy-spend accounts → custom
-            retainer. Mention it on the call.
+            Full video production (shoot + edit): priced per project · Landing
+            pages from $1,500 · SEO available as a monthly add-on. Mention it
+            on the call.
           </p>
         </div>
       </section>
@@ -325,8 +359,8 @@ export default function Home() {
               <div className="cta-point">
                 <span className="k">[02]</span>
                 <span>
-                  You leave with the first three things to fix — whether you
-                  hire us or not.
+                  Never run ads, tried it yourself, or tried AI and got
+                  burned — we&apos;ll show you what actually changes.
                 </span>
               </div>
               <div className="cta-point">
@@ -364,7 +398,7 @@ export default function Home() {
             Yucca<span style={{ color: 'var(--accent)' }}>.</span>
           </div>
           <p>
-            Yucca Agency · Performance marketing · Los Angeles, CA · © 2026
+            Yucca Agency · Paid social advertising · Los Angeles, CA · © 2026
           </p>
         </div>
       </footer>

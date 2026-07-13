@@ -10,9 +10,9 @@ const siteUrl =
     ? 'https://yuccaagency.com'
     : 'http://localhost:3000');
 
-const title = 'Yucca Agency — Performance marketing that beats the benchmark';
+const title = 'Yucca Agency — Paid social ads for service businesses';
 const description =
-  'Paid ads, SEO, landing pages, and content strategy — built and managed by one team measured on the only thing that matters: your cost per customer.';
+  'Paid social campaigns for dentists, lawyers, contractors, gyms, salons, spas, and other service and ecommerce brands — built on trend-aware creative, AI-assisted targeting, and real campaign experience. No $3-5k/mo retainer required.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -74,11 +74,11 @@ export default function LeadForm() {
               </option>
               <option>Dental / orthodontics</option>
               <option>Law firm</option>
+              <option>Contractor / home services</option>
               <option>Gym / fitness</option>
-              <option>Beauty / salon / med spa</option>
-              <option>E-commerce / DTC</option>
-              <option>Insurance</option>
-              <option>Startup</option>
+              <option>Beauty / salon / spa</option>
+              <option>Therapist / wellness</option>
+              <option>E-commerce / DTC brand</option>
               <option>Other</option>
             </select>
           </div>
