@@ -297,7 +297,7 @@ export default function Home() {
               <div className="tier-tag">MOST POPULAR</div>
               <div className="tier-name">Growth</div>
               <div className="tier-price">
-                $3,000<span className="per">/mo</span>
+                $2,000<span className="per">/mo</span>
               </div>
               <div className="tier-desc">
                 For businesses ready to scale what&apos;s already converting.
@@ -317,7 +317,7 @@ export default function Home() {
             <div className="tier">
               <div className="tier-name">Scale</div>
               <div className="tier-price">
-                $5,500<span className="per">/mo+</span>
+                Custom<span className="per"> pricing</span>
               </div>
               <div className="tier-desc">
                 Full-funnel for businesses with serious volume.
@@ -327,7 +327,7 @@ export default function Home() {
                 <li>Full production — we shoot &amp; edit for you</li>
                 <li>SEO &amp; landing pages available add-on</li>
                 <li>Biweekly calls &amp; priority support</li>
-                <li>One-time setup: $1,000</li>
+                <li>Setup fee scoped to your project</li>
               </ul>
               <a href="#consult" className="btn btn-ghost">
                 Talk to us
