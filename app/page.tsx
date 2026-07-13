@@ -1,4 +1,5 @@
 import LeadForm from './LeadForm';
+import RotatingAudience from './RotatingAudience';
 
 export default function Home() {
   return (
@@ -78,6 +79,7 @@ export default function Home() {
             ROI 2–5x, with no long-term contracts. SEO and landing pages
             available if you need them.
           </p>
+          <RotatingAudience />
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
               Book a free consultation →
