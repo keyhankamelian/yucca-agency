@@ -69,15 +69,14 @@ export default function Home() {
         <div className="wrap">
           <div className="eyebrow">Paid social ads · Los Angeles</div>
           <h1>
-            We don&apos;t market your business. We <em>outgrow</em> your
-            competition.
+            We don&apos;t just do marketing for your business. We{' '}
+            <em>outgrow</em> your competition.
           </h1>
           <p className="hero-sub">
-            Paid social campaigns for dentists, lawyers, contractors, gyms,
-            salons, spas, therapists, and ecommerce brands — run by people who
-            know the platforms, follow the trends, and have an eye for what
-            actually stops the scroll. SEO and landing pages available if you
-            need them.
+            Paid social campaigns for service businesses and brands —
+            dentists, contractors, gyms, spas, and more — built to grow your
+            ROI 2–5x, with no long-term contracts. SEO and landing pages
+            available if you need them.
           </p>
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
