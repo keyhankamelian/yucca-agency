@@ -344,6 +344,27 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          <div className="bonus">
+            <div className="bonus-copy">
+              <div className="bonus-label">Included with every plan — free</div>
+              <div className="bonus-name">The Lead-to-Client System</div>
+              <p className="bonus-desc">
+                Our 5-step playbook for turning a booked consult into a signed
+                client — call scripts, follow-up templates, objection
+                handlers, and a no-show prevention checklist. Yours with any
+                plan, no matter the tier.
+              </p>
+            </div>
+            <a
+              href="/lead-to-client-system.pdf"
+              className="btn btn-ghost"
+              download
+            >
+              Download the playbook →
+            </a>
+          </div>
+
           <p className="tier-note">
             Full video production (shoot + edit): priced per project · Landing
             pages from $1,500 · SEO available as a monthly add-on. Mention it
