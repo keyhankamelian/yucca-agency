@@ -68,7 +68,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="wrap">
-          <div className="eyebrow">Paid social ads · Los Angeles</div>
+          <div className="eyebrow">Paid social ads · Lead gen · Social growth</div>
           <h1>
             We don&apos;t just do marketing for your business. We{' '}
             <em>outgrow</em> your competition.
@@ -185,6 +185,24 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="highlight">
+            <div className="highlight-copy">
+              <div className="highlight-label">Beyond the campaign</div>
+              <div className="highlight-name">
+                We audit the whole funnel, not just the targeting
+              </div>
+              <p className="highlight-desc">
+                Great targeting can still send the right person to the wrong
+                page. We audit your branding, landing page, and offer to make
+                sure they&apos;re aligned with the campaign — so the leads we
+                bring in convert at the highest intent and the best return.
+                Need work? We&apos;ll optimize what you have for a fee, or
+                build it from scratch for a fee if you don&apos;t have one
+                yet.
+              </p>
+            </div>
+          </div>
+
           {/* Signature element: four real results across four industries */}
           <div className="proof" id="proof" style={{ marginTop: '44px' }}>
             <div className="proof-head">
@@ -279,8 +297,9 @@ export default function Home() {
           <div className="sec-eyebrow">Pricing</div>
           <h2>You don&apos;t need a $3–5k retainer to start.</h2>
           <p className="sec-lede">
-            Ad spend is paid directly to the platforms by you and stays separate
-            from these fees. A one-time setup fee applies to your first month.
+            Ad spend is paid directly to the platforms by you and stays
+            separate from these fees.{' '}
+            <strong>Onboarding fees are waived through July 31.</strong>
           </p>
           <div className="tiers">
             <div className="tier">
@@ -297,7 +316,10 @@ export default function Home() {
                 <li>You shoot &amp; edit, we launch &amp; manage</li>
                 <li>Monthly performance report</li>
                 <li>Up to ~$3k ad spend managed</li>
-                <li>One-time setup: $500</li>
+                <li>
+                  Onboarding: <s>$500</s>{' '}
+                  <span className="waived">waived through July 31</span>
+                </li>
               </ul>
               <a href="#consult" className="btn btn-ghost">
                 Start here
@@ -318,7 +340,10 @@ export default function Home() {
                 <li>Trend &amp; AI-assisted targeting</li>
                 <li>Monthly strategy call</li>
                 <li>Up to ~$10k ad spend managed</li>
-                <li>One-time setup: $750</li>
+                <li>
+                  Onboarding: <s>$750</s>{' '}
+                  <span className="waived">waived through July 31</span>
+                </li>
               </ul>
               <a href="#consult" className="btn btn-primary">
                 Book a consultation
@@ -337,7 +362,10 @@ export default function Home() {
                 <li>Full production — we shoot &amp; edit for you</li>
                 <li>SEO &amp; landing pages available add-on</li>
                 <li>Biweekly calls &amp; priority support</li>
-                <li>Setup fee scoped to your project</li>
+                <li>
+                  Onboarding:{' '}
+                  <span className="waived">waived through July 31</span>
+                </li>
               </ul>
               <a href="#consult" className="btn btn-ghost">
                 Talk to us
@@ -345,24 +373,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bonus">
-            <div className="bonus-copy">
-              <div className="bonus-label">Included with every plan — free</div>
-              <div className="bonus-name">The Lead-to-Client System</div>
-              <p className="bonus-desc">
+          <div className="highlight">
+            <div className="highlight-copy">
+              <div className="highlight-label">
+                Included with every plan — free
+              </div>
+              <div className="highlight-name">The Lead-to-Client System</div>
+              <p className="highlight-desc">
                 Our 5-step playbook for turning a booked consult into a signed
                 client — call scripts, follow-up templates, objection
-                handlers, and a no-show prevention checklist. Yours with any
-                plan, no matter the tier.
+                handlers, and a no-show prevention checklist. Sent to you free
+                once you sign on, no matter the tier.
               </p>
             </div>
-            <a
-              href="/lead-to-client-system.pdf"
-              className="btn btn-ghost"
-              download
-            >
-              Download the playbook →
-            </a>
           </div>
 
           <p className="tier-note">

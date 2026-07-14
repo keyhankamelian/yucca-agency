@@ -78,6 +78,7 @@ section{padding:80px 0}
 .sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-mute);margin-bottom:16px}
 h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;line-height:1.08;max-width:20ch}
 .sec-lede{margin-top:16px;color:var(--paper-dim);max-width:52ch;font-size:17px}
+.sec-lede strong{color:var(--paper);font-weight:600}
 
 /* ---- services ---- */
 .svc-grid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
@@ -101,16 +102,17 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);l
 .tier ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px;flex:1}
 .tier li{font-size:14px;color:var(--paper-dim);padding-left:24px;position:relative}
 .tier li::before{content:"→";position:absolute;left:0;color:var(--accent-deep);font-family:'IBM Plex Mono',monospace}
+.tier li s{color:var(--paper-mute)}
+.tier li .waived{color:var(--accent-deep);font-weight:600}
 .tier .btn{width:100%;justify-content:center}
 .tier-note{margin-top:22px;text-align:center;font-size:13px;color:var(--paper-mute);font-family:'IBM Plex Mono',monospace}
 
-/* ---- bonus banner ---- */
-.bonus{margin-top:28px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius);background:var(--panel);padding:26px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
-.bonus-copy{flex:1;min-width:240px}
-.bonus-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:8px}
-.bonus-name{font-family:'Fraunces',serif;font-weight:500;font-size:21px;letter-spacing:-.01em;margin-bottom:8px}
-.bonus-desc{font-size:14px;color:var(--paper-dim);max-width:52ch;margin:0}
-.bonus .btn{flex-shrink:0}
+/* ---- highlight box (reused for editorial callouts across sections) ---- */
+.highlight{margin-top:28px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius);background:var(--panel);padding:26px 28px}
+.highlight-copy{max-width:64ch}
+.highlight-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:8px}
+.highlight-name{font-family:'Fraunces',serif;font-weight:500;font-size:21px;letter-spacing:-.01em;margin-bottom:8px}
+.highlight-desc{font-size:14px;color:var(--paper-dim);margin:0}
 
 /* ---- form ---- */
 .cta-sec{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
