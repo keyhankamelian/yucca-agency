@@ -1,9 +1,22 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
 
 export default function LeadForm() {
   const [state, handleSubmit] = useForm('xkolqpnb');
+
+  useEffect(() => {
+    if (state.succeeded && typeof window.fbq === 'function') {
+      window.fbq('track', 'Lead');
+    }
+  }, [state.succeeded]);
 
   if (state.succeeded) {
     return (
