@@ -390,7 +390,7 @@ export default function Home() {
 
           <p className="tier-note">
             Full video production (shoot + edit): priced per project · Landing
-            pages from $1,500 · SEO available as a monthly add-on. Mention it
+            pages from $1,000 · SEO available as a monthly add-on. Mention it
             on the call.
           </p>
         </div>
