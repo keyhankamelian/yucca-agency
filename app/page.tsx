@@ -413,7 +413,7 @@ export default function Home() {
         <div className="wrap cta-grid">
           <div className="cta-left">
             <div className="sec-eyebrow">Free consultation</div>
-            <h2>30 minutes. A real plan. No pitch deck.</h2>
+            <h2>A quick call. A real plan. No obligation.</h2>
             <div className="cta-points">
               <div className="cta-point">
                 <span className="k">[01]</span>
