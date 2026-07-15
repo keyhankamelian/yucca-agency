@@ -418,15 +418,15 @@ export default function Home() {
               <div className="cta-point">
                 <span className="k">[01]</span>
                 <span>
-                  We look at your current numbers and tell you where the money
-                  is leaking.
+                  We look at your current numbers and show you exactly where
+                  the money&apos;s leaking.
                 </span>
               </div>
               <div className="cta-point">
                 <span className="k">[02]</span>
                 <span>
-                  Never run ads, tried it yourself, or tried AI and got
-                  burned — we&apos;ll show you what actually changes.
+                  You leave with the first three things to fix — whether you
+                  hire us or not.
                 </span>
               </div>
               <div className="cta-point">
@@ -464,7 +464,7 @@ export default function Home() {
             Yucca<span style={{ color: 'var(--accent)' }}>.</span>
           </div>
           <p>
-            Yucca Agency · Paid social advertising · Los Angeles, CA · © 2026
+            Yucca Agency · Digital marketing · Los Angeles, CA · © 2026
           </p>
         </div>
       </footer>
