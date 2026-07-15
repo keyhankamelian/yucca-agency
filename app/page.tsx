@@ -357,7 +357,7 @@ export default function Home() {
                   <span className="waived">waived through July 31</span>
                 </li>
               </ul>
-              <a href="#consult" className="btn btn-primary">
+              <a href="#consult" className="btn btn-ghost">
                 Book a consultation
               </a>
             </div>
