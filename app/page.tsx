@@ -418,22 +418,22 @@ export default function Home() {
               <div className="cta-point">
                 <span className="k">[01]</span>
                 <span>
-                  We look at your current numbers and show you exactly where
-                  the money&apos;s leaking.
+                  We show you how much more revenue your ad investment could
+                  generate — and what it takes to dominate your market.
                 </span>
               </div>
               <div className="cta-point">
                 <span className="k">[02]</span>
                 <span>
-                  You leave with the first three things to fix — whether you
-                  hire us or not.
+                  We analyze your brand, offer, and current marketing — and
+                  show you exactly what&apos;s working and what&apos;s not.
                 </span>
               </div>
               <div className="cta-point">
                 <span className="k">[03]</span>
                 <span>
-                  If we&apos;re a fit, we&apos;ll model your likely cost per
-                  customer before you spend a dollar.
+                  If we&apos;re a fit, we&apos;ll map out the changes to make
+                  and model your numbers before you spend a dollar.
                 </span>
               </div>
             </div>
