@@ -88,6 +88,19 @@ export default function Home() {
               See the numbers
             </a>
           </div>
+          <div className="partners">
+            <span className="partners-label">Certified</span>
+            <img
+              src="/partners/google-partner.png"
+              alt="Google Partner"
+              className="partner-logo"
+            />
+            <img
+              src="/partners/meta-business-partner.png"
+              alt="Meta Business Partner"
+              className="partner-logo partner-logo--meta"
+            />
+          </div>
         </div>
       </header>
 
