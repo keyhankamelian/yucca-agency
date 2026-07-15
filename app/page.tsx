@@ -358,7 +358,7 @@ export default function Home() {
                 </li>
               </ul>
               <a href="#consult" className="btn btn-ghost">
-                Book a consultation
+                Book my free strategy session
               </a>
             </div>
             <div className="tier">
