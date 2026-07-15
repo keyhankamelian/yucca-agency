@@ -97,8 +97,6 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);l
 .tiers{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:880px){.tiers{grid-template-columns:1fr}}
 .tier{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:var(--panel);display:flex;flex-direction:column;position:relative}
-.tier.feat{border-color:var(--accent);background:linear-gradient(180deg,rgba(122,139,63,.08),var(--panel))}
-.tier-tag{position:absolute;top:-11px;left:26px;background:var(--accent);color:var(--ink);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em}
 .tier-name{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-mute)}
 .tier-price{font-family:'Fraunces',serif;font-weight:500;font-size:42px;margin:14px 0 2px;letter-spacing:-.02em}
 .tier-price .per{font-size:15px;color:var(--paper-mute);font-family:'Inter',sans-serif}

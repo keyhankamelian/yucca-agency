@@ -338,8 +338,7 @@ export default function Home() {
                 Start here
               </a>
             </div>
-            <div className="tier feat">
-              <div className="tier-tag">MOST POPULAR</div>
+            <div className="tier">
               <div className="tier-name">Growth</div>
               <div className="tier-price">
                 $2,000<span className="per">/mo</span>
