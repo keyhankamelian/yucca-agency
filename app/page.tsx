@@ -76,8 +76,8 @@ export default function Home() {
           <p className="hero-sub">
             Paid social campaigns for service businesses and brands —
             dentists, contractors, gyms, spas, and more — built to grow your
-            ROI 2–5x, with no long-term contracts. SEO and landing pages
-            available if you need them.
+            ROI 2–5x, with no long-term contracts. SEO and full-funnel
+            optimization or build-out available if you need them.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
@@ -216,15 +216,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Signature element: four real results across four industries */}
+          {/* Signature element: three real results across three industries */}
           <div className="proof" id="proof" style={{ marginTop: '44px' }}>
             <div className="proof-head">
-              <span>CASE FILES · FOUR INDUSTRIES · REAL CAMPAIGNS</span>
+              <span>CASE FILES · THREE INDUSTRIES · REAL CAMPAIGNS</span>
               <span className="live">VERIFIED RESULTS</span>
             </div>
             <div className="proof-body">
               <div className="proof-cell">
-                <div className="proof-vert">Dental · Meta Ads</div>
+                <div className="proof-vert">
+                  Orthodontics · Los Angeles, CA · Meta Ads
+                </div>
                 <div className="proof-number">
                   <span className="cur">$</span>7.38
                 </div>
@@ -232,9 +234,12 @@ export default function Home() {
                   cost per lead · 42 leads · 1 month · $310 spend
                 </div>
                 <div className="proof-vs">industry avg ~$77 · ~90% lower</div>
+                <div className="proof-revenue">$10,000+ in patient revenue generated</div>
               </div>
               <div className="proof-cell">
-                <div className="proof-vert">Vehicle Dealership · Lead Gen</div>
+                <div className="proof-vert">
+                  Vehicle Dealership · Anaheim, CA · Lead Gen
+                </div>
                 <div className="proof-number">
                   <span className="cur">$</span>2.20
                 </div>
@@ -242,24 +247,18 @@ export default function Home() {
                   cost per customer lead · ~1,358 leads · 3 months
                 </div>
                 <div className="proof-vs">high-intent buyer pipeline</div>
+                <div className="proof-revenue">$2.5M+ in dealership revenue generated</div>
               </div>
               <div className="proof-cell">
-                <div className="proof-vert">Country Artist · Streaming</div>
-                <div className="proof-number">
-                  <span className="cur">$</span>0.07
+                <div className="proof-vert">
+                  Contractor · West Covina, CA · Meta Ads
                 </div>
+                <div className="proof-number">3.8x</div>
                 <div className="proof-metric">
-                  cost per DSP stream · 22%+ CTR · US + global
+                  return on ad spend · 32 leads · $750 spend · 1 month
                 </div>
-                <div className="proof-vs">industry avg ~$0.65 · ~89% lower</div>
-              </div>
-              <div className="proof-cell">
-                <div className="proof-vert">Contractor · Meta Ads</div>
-                <div className="proof-number">4x</div>
-                <div className="proof-metric">
-                  return on ad spend · 32 leads · $1,000 spend · 1 month
-                </div>
-                <div className="proof-vs">≈$31 cost per lead</div>
+                <div className="proof-vs">≈$23 cost per lead</div>
+                <div className="proof-revenue">≈$2,850 estimated revenue</div>
               </div>
             </div>
             <div className="proof-foot">
