@@ -415,18 +415,7 @@ export default function Home() {
       <section id="about">
         <div className="wrap about-grid">
           <div className="about-photo">
-            {/* TODO: swap in the real founder photo at /public/founder.jpg */}
-            <div className="about-photo-placeholder">
-              <svg viewBox="0 2.5 24 24" xmlns="http://www.w3.org/2000/svg">
-                <g fill="currentColor">
-                  <path d="M11.3 21 L12 8 L12.7 21 Z" />
-                  <path d="M11.3 21 L7 9 L12 20 Z" />
-                  <path d="M12.7 21 L17 9 L12 20 Z" />
-                  <path d="M11.5 21 L3.5 13 L12 20.5 Z" />
-                  <path d="M12.5 21 L20.5 13 L12 20.5 Z" />
-                </g>
-              </svg>
-            </div>
+            <img src="/founder.jpg" alt="Keyhan, founder of Yucca Agency" />
           </div>
           <div className="about-copy">
             <div className="sec-eyebrow">Who&apos;s behind this</div>
