@@ -236,7 +236,7 @@ export default function Home() {
                   <span className="cur">$</span>7.38
                 </div>
                 <div className="proof-metric">
-                  cost per lead · 42 leads · 1 month · $310 spend
+                  cost per lead · 42 leads · 30 days (May 2026) · $310 spend
                 </div>
                 <div className="proof-vs">industry avg ~$77 · ~90% lower</div>
                 <div className="proof-revenue">$10,000+ in patient revenue generated</div>
@@ -249,7 +249,7 @@ export default function Home() {
                   <span className="cur">$</span>2.20
                 </div>
                 <div className="proof-metric">
-                  cost per customer lead · ~1,358 leads · 3 months
+                  cost per customer lead · ~1,358 leads · 3 months (Feb–May 2026)
                 </div>
                 <div className="proof-vs">high-intent buyer pipeline</div>
                 <div className="proof-revenue">$2.5M+ in dealership revenue generated</div>
@@ -258,12 +258,13 @@ export default function Home() {
                 <div className="proof-vert">
                   Contractor · West Covina, CA · Meta Ads
                 </div>
-                <div className="proof-number">3.8x</div>
+                <div className="proof-number">4.3x</div>
                 <div className="proof-metric">
                   return on ad spend · 32 leads · $750 spend · 1 month
+                  (April 2026)
                 </div>
                 <div className="proof-vs">≈$23 cost per lead</div>
-                <div className="proof-revenue">≈$2,850 estimated revenue</div>
+                <div className="proof-revenue">≈$3,225 estimated revenue</div>
               </div>
             </div>
             <div className="proof-foot">
