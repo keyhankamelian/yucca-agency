@@ -113,7 +113,10 @@ export default function LeadForm() {
         >
           Get my free consultation →
         </button>
-        <p className="form-fine">No spam. We reply within one business day.</p>
+        <p className="form-fine">
+          We&apos;ll reach out within one business day to schedule your
+          30-minute call, if we&apos;re a fit.
+        </p>
         {state.errors && (
           <p className="form-error" id="formError" style={{ display: 'block' }}>
             Something went wrong. Email us directly at hello@yuccaagency.com.
