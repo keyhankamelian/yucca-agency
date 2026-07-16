@@ -78,21 +78,33 @@ export default function LeadForm() {
             placeholder="(000) 000-0000"
           />
         </div>
-        <div className="fld">
-          <label htmlFor="type">Business type</label>
-          <select id="type" name="business_type" defaultValue="" required>
-            <option value="" disabled>
-              Select one
-            </option>
-            <option>Dental / orthodontics</option>
-            <option>Law firm</option>
-            <option>Contractor / home services</option>
-            <option>Gym / fitness</option>
-            <option>Beauty / salon / spa</option>
-            <option>Therapist / wellness</option>
-            <option>E-commerce / DTC brand</option>
-            <option>Other</option>
-          </select>
+        <div className="row2">
+          <div className="fld">
+            <label htmlFor="location">Location</label>
+            <input
+              id="location"
+              name="location"
+              type="text"
+              placeholder="City, State"
+              required
+            />
+          </div>
+          <div className="fld">
+            <label htmlFor="type">Business type</label>
+            <select id="type" name="business_type" defaultValue="" required>
+              <option value="" disabled>
+                Select one
+              </option>
+              <option>Dental / orthodontics</option>
+              <option>Law firm</option>
+              <option>Contractor / home services</option>
+              <option>Gym / fitness</option>
+              <option>Beauty / salon / spa</option>
+              <option>Therapist / wellness</option>
+              <option>E-commerce / DTC brand</option>
+              <option>Other</option>
+            </select>
+          </div>
         </div>
         <button
           type="submit"
