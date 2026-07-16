@@ -78,36 +78,21 @@ export default function LeadForm() {
             placeholder="(000) 000-0000"
           />
         </div>
-        <div className="row2">
-          <div className="fld">
-            <label htmlFor="type">Business type</label>
-            <select id="type" name="business_type" defaultValue="" required>
-              <option value="" disabled>
-                Select one
-              </option>
-              <option>Dental / orthodontics</option>
-              <option>Law firm</option>
-              <option>Contractor / home services</option>
-              <option>Gym / fitness</option>
-              <option>Beauty / salon / spa</option>
-              <option>Therapist / wellness</option>
-              <option>E-commerce / DTC brand</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div className="fld">
-            <label htmlFor="budget">Monthly ad budget</label>
-            <select id="budget" name="ad_budget" defaultValue="" required>
-              <option value="" disabled>
-                Select range
-              </option>
-              <option>Under $1,000</option>
-              <option>$1,000 – $5,000</option>
-              <option>$5,000 – $15,000</option>
-              <option>$15,000+</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
+        <div className="fld">
+          <label htmlFor="type">Business type</label>
+          <select id="type" name="business_type" defaultValue="" required>
+            <option value="" disabled>
+              Select one
+            </option>
+            <option>Dental / orthodontics</option>
+            <option>Law firm</option>
+            <option>Contractor / home services</option>
+            <option>Gym / fitness</option>
+            <option>Beauty / salon / spa</option>
+            <option>Therapist / wellness</option>
+            <option>E-commerce / DTC brand</option>
+            <option>Other</option>
+          </select>
         </div>
         <button
           type="submit"
