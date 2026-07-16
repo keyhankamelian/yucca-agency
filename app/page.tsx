@@ -68,7 +68,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="wrap">
-          <div className="eyebrow">Paid social ads · Lead gen · Social growth</div>
+          <div className="eyebrow">Paid social ads · Lead gen · Market growth</div>
           <h1>
             We don&apos;t just do marketing for your business. We{' '}
             <em>outgrow</em> your competition.
