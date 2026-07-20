@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import PageTransition from './components/PageTransition';
 import './globals.css';
 
 const FB_PIXEL_ID = '1583702113103565';
@@ -55,7 +56,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
