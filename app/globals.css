@@ -33,7 +33,7 @@ body{
 .promo-bar a:hover{text-decoration:underline}
 nav{position:sticky;top:0;z-index:50;background:rgba(244,239,228,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:'Fraunces',serif;font-weight:600;font-size:21px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.logo{font-family:'Fraunces',serif;font-weight:600;font-size:21px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;color:var(--paper);text-decoration:none}
 .logo .mark{width:30px;height:30px;flex-shrink:0}
 .nav-links{display:flex;gap:30px;align-items:center}
 .nav-links a{color:var(--paper-dim);text-decoration:none;font-size:14px;transition:color .2s}
