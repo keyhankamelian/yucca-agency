@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Yucca Agency',
@@ -8,29 +9,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <>
-      <nav>
-        <div className="wrap nav-in">
-          <Link href="/" className="logo">
-            <svg
-              className="mark"
-              viewBox="0 2.5 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#7A8B3F">
-                <path d="M11.3 21 L12 8 L12.7 21 Z" />
-                <path d="M11.3 21 L7 9 L12 20 Z" />
-                <path d="M12.7 21 L17 9 L12 20 Z" />
-                <path d="M11.5 21 L3.5 13 L12 20.5 Z" />
-                <path d="M12.5 21 L20.5 13 L12 20.5 Z" />
-              </g>
-            </svg>
-            Yucca
-          </Link>
-          <div className="nav-links">
-            <Link href="/">Back to home</Link>
-          </div>
-        </div>
-      </nav>
+      <Nav />
 
       <section>
         <div className="wrap legal">
@@ -122,14 +101,7 @@ export default function PrivacyPolicy() {
         </div>
       </section>
 
-      <footer>
-        <div className="wrap">
-          <div className="foot-logo">
-            Yucca<span style={{ color: 'var(--accent)' }}>.</span>
-          </div>
-          <p>Yucca Agency · Digital marketing · Los Angeles, CA · © 2026</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

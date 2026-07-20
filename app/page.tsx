@@ -1,41 +1,17 @@
 import LeadForm from './LeadForm';
 import RotatingAudience from './RotatingAudience';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
     <>
       <div className="promo-bar">
-        <a href="#pricing">
+        <a href="/pricing">
           Onboarding fees waived through July 31 — see plans →
         </a>
       </div>
-      <nav>
-        <div className="wrap nav-in">
-          <div className="logo">
-            <svg
-              className="mark"
-              viewBox="0 2.5 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#7A8B3F">
-                <path d="M11.3 21 L12 8 L12.7 21 Z" />
-                <path d="M11.3 21 L7 9 L12 20 Z" />
-                <path d="M12.7 21 L17 9 L12 20 Z" />
-                <path d="M11.5 21 L3.5 13 L12 20.5 Z" />
-                <path d="M12.5 21 L20.5 13 L12 20.5 Z" />
-              </g>
-            </svg>
-            Yucca
-          </div>
-          <div className="nav-links">
-            <a href="#services">Services</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#consult" className="nav-cta">
-              Free consultation
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Nav />
 
       <header className="hero">
         <div className="yucca-bg yucca-hero" aria-hidden="true">
@@ -291,158 +267,6 @@ export default function Home() {
         <span className="rule"></span>
       </div>
 
-      <section id="pricing">
-        <div className="yucca-bg yucca-pricing" aria-hidden="true">
-          <svg
-            viewBox="0 0 200 260"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M100 260 L100 150" />
-              <path d="M100 152 L64 132 M100 152 L136 132 M100 152 L58 158 M100 152 L142 158 M100 152 L72 176 M100 152 L128 176" />
-              <path d="M100 150 L100 96" />
-              <path d="M100 96 L70 74 M100 96 L130 74 M100 96 L62 92 M100 96 L138 92 M100 96 L78 112 M100 96 L122 112 M100 96 L100 62" />
-            </g>
-          </svg>
-        </div>
-        <div className="wrap">
-          <div className="sec-eyebrow">Pricing</div>
-          <h2>You don&apos;t need a $3–5k retainer to start.</h2>
-          <p className="sec-lede">
-            Ad spend is paid directly to the platforms by you and stays
-            separate from these fees.{' '}
-            <strong>Onboarding fees are waived through July 31.</strong>
-          </p>
-          <div className="tiers">
-            <div className="tier">
-              <div className="tier-name">Launch</div>
-              <div className="tier-price">
-                $1,000<span className="per">/mo</span>
-              </div>
-              <div className="tier-desc">
-                For businesses running their first real paid social campaign.
-              </div>
-              <ul>
-                <li>One platform (Meta or TikTok)</li>
-                <li>Creative direction — we tell you what to shoot</li>
-                <li>You shoot &amp; edit, we launch &amp; manage</li>
-                <li>Monthly performance report</li>
-                <li>Up to ~$3k ad spend managed</li>
-                <li>
-                  Onboarding: <s>$500</s>{' '}
-                  <span className="waived">waived through July 31</span>
-                </li>
-              </ul>
-              <a href="#consult" className="btn btn-ghost">
-                Start here
-              </a>
-            </div>
-            <div className="tier">
-              <div className="tier-name">Growth</div>
-              <div className="tier-price">
-                $2,000<span className="per">/mo</span>
-              </div>
-              <div className="tier-desc">
-                For businesses ready to scale what&apos;s already converting.
-              </div>
-              <ul>
-                <li>Two platforms (Meta, TikTok, Instagram)</li>
-                <li>Creative direction — we edit your footage</li>
-                <li>Trend &amp; AI-assisted targeting</li>
-                <li>Monthly strategy call</li>
-                <li>Up to ~$10k ad spend managed</li>
-                <li>
-                  Onboarding: <s>$750</s>{' '}
-                  <span className="waived">waived through July 31</span>
-                </li>
-              </ul>
-              <a href="#consult" className="btn btn-ghost">
-                Book my free strategy session
-              </a>
-            </div>
-            <div className="tier">
-              <div className="tier-name">Scale</div>
-              <div className="tier-price">
-                Custom<span className="per"> pricing</span>
-              </div>
-              <div className="tier-desc">
-                Full-funnel for businesses with serious volume.
-              </div>
-              <ul>
-                <li>Multi-platform paid social</li>
-                <li>Full production — we shoot &amp; edit for you</li>
-                <li>SEO &amp; landing pages available add-on</li>
-                <li>Biweekly calls &amp; priority support</li>
-                <li>
-                  Onboarding:{' '}
-                  <span className="waived">waived through July 31</span>
-                </li>
-              </ul>
-              <a href="#consult" className="btn btn-ghost">
-                Talk to us
-              </a>
-            </div>
-          </div>
-
-          <div className="highlight">
-            <div className="highlight-copy">
-              <div className="highlight-label">
-                Included with every plan — free
-              </div>
-              <div className="highlight-name">The Lead-to-Client System</div>
-              <p className="highlight-desc">
-                Our 5-step playbook for turning a booked consult into a signed
-                client — call scripts, follow-up templates, objection
-                handlers, and a no-show prevention checklist. Sent to you free
-                once you sign on, no matter the tier.
-              </p>
-            </div>
-          </div>
-
-          <p className="tier-note">
-            Full video production (shoot + edit): priced per project · Landing
-            pages from $1,000 · SEO available as a monthly add-on. Mention it
-            on the call.
-          </p>
-        </div>
-      </section>
-
-      <section id="about">
-        <div className="wrap about-grid">
-          <div className="about-photo">
-            <img src="/founder.jpg" alt="Keyhan, founder of Yucca Agency" />
-          </div>
-          <div className="about-copy">
-            <div className="sec-eyebrow">Who&apos;s behind this</div>
-            <h2>Why Yucca — and why now</h2>
-            <p className="about-text">
-              I&apos;m Keyhan, founder of Yucca Agency.
-            </p>
-            <p className="about-text">
-              I&apos;ve spent six years running paid ad campaigns for small
-              and medium-sized businesses — managing budgets, writing
-              creative, optimizing funnels, and turning ad spend into
-              measurable revenue across local service businesses,
-              e-commerce brands, and entertainment.
-            </p>
-            <p className="about-text">
-              Yucca is built around one principle: deliver the kind of
-              campaigns big agencies charge a fortune for, at a price that
-              actually makes sense for independent businesses — combined
-              with an eye for creative and brand most agencies never bring
-              to the table. We work with a small number of clients at a
-              time, one per market, so the strategy we build stays yours.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="cta-sec" id="consult">
         <div className="wrap cta-grid">
           <div className="cta-left">
@@ -478,53 +302,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
-        <div className="wrap">
-          <svg
-            className="yucca-foot"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <g fill="currentColor">
-              <path d="M11.3 21 L12 8 L12.7 21 Z" />
-              <path d="M11.3 21 L7 9 L12 20 Z" />
-              <path d="M12.7 21 L17 9 L12 20 Z" />
-              <path d="M11.5 21 L3.5 13 L12 20.5 Z" />
-              <path d="M12.5 21 L20.5 13 L12 20.5 Z" />
-            </g>
-          </svg>
-          <div className="foot-logo">
-            Yucca<span style={{ color: 'var(--accent)' }}>.</span>
-          </div>
-          <div className="foot-icons">
-            <a href="mailto:hello@yuccaagency.com" aria-label="Email Yucca Agency">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                <path d="M4 7l8 6 8-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/yuccaagency" target="_blank" rel="noopener noreferrer" aria-label="Yucca Agency on Instagram">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.6" />
-                <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.6" />
-                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61592117121636" target="_blank" rel="noopener noreferrer" aria-label="Yucca Agency on Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z" />
-              </svg>
-            </a>
-          </div>
-          <p>
-            Yucca Agency · Digital marketing · Los Angeles, CA · © 2026
-          </p>
-          <p className="foot-legal">
-            <a href="/privacy">Privacy Policy</a>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
