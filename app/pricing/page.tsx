@@ -35,9 +35,8 @@ export default function Pricing() {
           <div className="sec-eyebrow">Pricing</div>
           <h2>You don&apos;t need a $3–5k retainer to start.</h2>
           <p className="sec-lede">
-            Ad spend is paid directly to the platforms by you and stays
-            separate from these fees.{' '}
-            <strong>Onboarding fees are waived through July 31.</strong>
+            Three straightforward plans, built around how much campaign you
+            actually need.
           </p>
           <div className="tiers">
             <div className="tier">
@@ -109,6 +108,14 @@ export default function Pricing() {
               </a>
             </div>
           </div>
+
+          <p className="tier-note">
+            Ad spend is paid directly to the platforms by you and stays
+            separate from these fees.{' '}
+            <span className="waived">
+              Onboarding fees are waived through July 31.
+            </span>
+          </p>
 
           <div className="highlight">
             <div className="highlight-copy">
