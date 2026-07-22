@@ -49,7 +49,7 @@ export default function Pricing() {
                 For businesses running their first real paid social campaign.
               </div>
               <ul>
-                <li>One platform (Meta or TikTok)</li>
+                <li>One platform (Meta, TikTok, or Google Ads)</li>
                 <li>Creative direction — we tell you what to shoot</li>
                 <li>You shoot &amp; edit, we launch &amp; manage</li>
                 <li>Monthly performance report</li>
@@ -72,7 +72,7 @@ export default function Pricing() {
                 For businesses ready to scale what&apos;s already converting.
               </div>
               <ul>
-                <li>Two platforms (Meta, TikTok, Instagram)</li>
+                <li>Two platforms (Meta, TikTok, or Google Ads)</li>
                 <li>Creative direction — we edit your footage</li>
                 <li>Trend &amp; AI-assisted targeting</li>
                 <li>Monthly strategy call</li>

@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="promo-bar">
         <a href="/pricing">
-          Onboarding fees waived through July 31 — see plans →
+          Onboarding fees waived through July 31. See plans →
         </a>
       </div>
       <Nav />
@@ -55,10 +55,10 @@ export default function Home() {
             <em>outgrow</em> your competition.
           </h1>
           <p className="hero-sub">
-            Paid social campaigns for service businesses and brands —
-            dentists, contractors, gyms, spas, and more — built to grow your
-            ROI 2–5x, with no long-term contracts. SEO and full-funnel
-            optimization or build-out available if you need them.
+            Paid social campaigns for service businesses and brands: dentists,
+            contractors, gyms, spas, and more. Built to grow your ROI, with no
+            long-term contracts. SEO and full-funnel optimization or
+            build-out available if you need them.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
             <div className="svc">
               <div className="ix">02</div>
-              <h3>Tried it — or tried AI — alone</h3>
+              <h3>Tried it, or tried AI, alone</h3>
               <p>
                 You ran the ads yourself, or let an AI tool run them, and the
                 leads never showed up. We know why.
@@ -125,7 +125,7 @@ export default function Home() {
           <p className="sec-lede">
             Most agencies hand you a media buyer and leave the creative to
             you. We combine campaign experience with an eye for what actually
-            performs — and tell you exactly what to shoot.
+            performs, and tell you exactly what to shoot.
           </p>
           <div className="svc-grid">
             <div className="svc">
@@ -133,7 +133,7 @@ export default function Home() {
               <h3>Paid social advertising</h3>
               <p>
                 Meta, Instagram, and TikTok campaigns built around your
-                cost-per-lead target — not vanity reach.
+                cost-per-lead target, not vanity reach.
               </p>
             </div>
             <div className="svc">
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="svc">
               <div className="ix">03</div>
-              <h3>Full production — add-on</h3>
+              <h3>Full production (add-on)</h3>
               <p>
                 Don&apos;t want to shoot it yourself? We can shoot and edit
                 the whole thing, finalized, for a fee.
@@ -162,7 +162,7 @@ export default function Home() {
             </div>
             <div className="svc">
               <div className="ix">05</div>
-              <h3>Landing pages — add-on</h3>
+              <h3>Landing pages (add-on)</h3>
               <p>
                 Conversion-first pages built and tested, priced separately if
                 your funnel needs one.
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
             <div className="svc">
               <div className="ix">06</div>
-              <h3>SEO — add-on</h3>
+              <h3>SEO (add-on)</h3>
               <p>
                 Local and organic search work, available add-on for when
                 you&apos;re ready to stop renting every customer from ad
@@ -188,7 +188,7 @@ export default function Home() {
               <p className="highlight-desc">
                 Great targeting can still send the right person to the wrong
                 page. We audit your branding, landing page, and offer to make
-                sure they&apos;re aligned with the campaign — so the leads we
+                sure they&apos;re aligned with the campaign, so the leads we
                 bring in convert at the highest intent and the best return.
                 Need work? We&apos;ll optimize what you have for a fee, or
                 build it from scratch for a fee if you don&apos;t have one
@@ -244,8 +244,8 @@ export default function Home() {
               </div>
             </div>
             <div className="proof-foot">
-              Real campaigns across real industries. Your numbers will differ —
-              we&apos;ll model them on the call.
+              Real campaigns across real industries. Your numbers will differ.
+              We&apos;ll model them on the call.
             </div>
           </div>
         </div>
@@ -277,14 +277,14 @@ export default function Home() {
                 <span className="k">[01]</span>
                 <span>
                   We show you how much more revenue your ad investment could
-                  generate — and what it takes to dominate your market.
+                  generate, and what it takes to dominate your market.
                 </span>
               </div>
               <div className="cta-point">
                 <span className="k">[02]</span>
                 <span>
-                  We analyze your brand, offer, and current marketing — and
-                  show you exactly what&apos;s working and what&apos;s not.
+                  We analyze your brand, offer, and current marketing to show
+                  you exactly what&apos;s working and what&apos;s not.
                 </span>
               </div>
               <div className="cta-point">
