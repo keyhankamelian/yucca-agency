@@ -110,8 +110,8 @@ export default function Home() {
               <div className="ix">03</div>
               <h3>Priced out by agencies</h3>
               <p>
-                Most shops won&apos;t talk to you under a $3,000–$5,000
-                monthly retainer. We will.
+                Most agencies won&apos;t return your call under a $3,000 to
+                $5,000 monthly retainer. We will.
               </p>
             </div>
           </div>

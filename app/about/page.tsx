@@ -17,7 +17,7 @@ export default function About() {
             <img src="/founder.jpg" alt="Keyhan, founder of Yucca Agency" />
           </div>
           <div className="about-copy">
-            <div className="sec-eyebrow">Who&apos;s behind this</div>
+            <div className="sec-eyebrow">About Yucca</div>
             <h2>Why Yucca and why now</h2>
             <p className="about-text">
               I&apos;m Keyhan, founder of Yucca Agency.
