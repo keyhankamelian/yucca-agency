@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Reveal from '../components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'Pricing — Yucca Agency',
+  title: 'Pricing - Yucca Agency',
 };
 
 export default function Pricing() {
@@ -39,7 +40,7 @@ export default function Pricing() {
             actually need.
           </p>
           <div className="tiers">
-            <div className="tier">
+            <Reveal className="tier">
               <div className="tier-name">Launch</div>
               <div className="tier-price">
                 $1,000<span className="per">/mo</span>
@@ -61,8 +62,8 @@ export default function Pricing() {
               <a href="/#consult" className="btn btn-ghost">
                 Start here
               </a>
-            </div>
-            <div className="tier">
+            </Reveal>
+            <Reveal className="tier" delayMs={80}>
               <div className="tier-name">Growth</div>
               <div className="tier-price">
                 $2,000<span className="per">/mo</span>
@@ -84,8 +85,8 @@ export default function Pricing() {
               <a href="/#consult" className="btn btn-ghost">
                 Book my free strategy session
               </a>
-            </div>
-            <div className="tier">
+            </Reveal>
+            <Reveal className="tier" delayMs={160}>
               <div className="tier-name">Scale</div>
               <div className="tier-price">
                 Custom<span className="per"> pricing</span>
@@ -106,7 +107,7 @@ export default function Pricing() {
               <a href="/#consult" className="btn btn-ghost">
                 Talk to us
               </a>
-            </div>
+            </Reveal>
           </div>
 
           <p className="tier-note">

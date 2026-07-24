@@ -14,7 +14,7 @@ const siteUrl =
     ? 'https://yuccaagency.com'
     : 'http://localhost:3000');
 
-const title = 'Yucca Agency — Paid social ads for service businesses';
+const title = 'Yucca Agency - Digital Marketing';
 const description =
   'Paid social campaigns for dentists, lawyers, contractors, gyms, salons, spas, and other service and ecommerce brands — built on trend-aware creative, AI-assisted targeting, and real campaign experience. No $3-5k/mo retainer required.';
 
@@ -41,8 +41,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // suppressHydrationWarning: the inline script in <head> adds the .js class to
+  // <html> before React hydrates, which React would otherwise report as a
+  // server/client attribute mismatch.
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -53,6 +56,14 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
           rel="stylesheet"
+        />
+        {/* Marks that JS is running, before first paint. Scroll-reveal styles
+            are gated on .js so that if the bundle never executes, the content
+            renders plainly visible instead of stuck at opacity:0. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add('js')`,
+          }}
         />
       </head>
       <body>

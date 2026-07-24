@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Reveal from '../components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'About — Yucca Agency',
+  title: 'About - Yucca Agency',
 };
 
 export default function About() {
@@ -13,10 +14,10 @@ export default function About() {
 
       <section>
         <div className="wrap about-grid">
-          <div className="about-photo">
+          <Reveal className="about-photo">
             <img src="/founder.jpg" alt="Keyhan, founder of Yucca Agency" />
-          </div>
-          <div className="about-copy">
+          </Reveal>
+          <Reveal className="about-copy" delayMs={90}>
             <div className="sec-eyebrow">About Yucca</div>
             <h2>Why Yucca and why now</h2>
             <p className="about-text">
@@ -37,7 +38,7 @@ export default function About() {
               to the table. We work with a small number of clients at a
               time, one per market, so the strategy we build stays yours.
             </p>
-          </div>
+          </Reveal>
         </div>
       </section>
 

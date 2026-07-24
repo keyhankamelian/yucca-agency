@@ -3,7 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Yucca Agency',
+  title: 'Privacy Policy - Yucca Agency',
 };
 
 export default function PrivacyPolicy() {

@@ -15,7 +15,10 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-.page-transition{animation:page-fade-in .35s ease both}
+/* Opacity only: .page-transition wraps the sticky <nav>, and a transform here
+   would make it a containing block for the duration of the animation and break
+   sticky positioning. Per-element motion lives on .hero .wrap and .reveal. */
+.page-transition{animation:page-fade-in .45s cubic-bezier(.22,.61,.36,1) both}
 @keyframes page-fade-in{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.page-transition{animation:none}}
 body{
@@ -75,9 +78,9 @@ h1 em{font-style:italic;color:var(--accent)}
 .proof-head .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2.2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(122,139,63,.5)}70%{box-shadow:0 0 0 8px rgba(122,139,63,0)}100%{box-shadow:0 0 0 0 rgba(122,139,63,0)}}
 .proof-body{display:flex;flex-direction:column;gap:14px;padding:22px}
-.proof-cell{padding:26px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.proof-cell{padding:26px;border:1px solid var(--line);border-radius:10px;background:var(--panel);transition:border-color .2s,box-shadow .2s}
 .proof-vert{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--paper-mute);margin-bottom:14px}
-.proof-number{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,7vw,58px);line-height:1;color:var(--accent);letter-spacing:-.02em}
+.proof-number{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(40px,7vw,58px);line-height:1;color:var(--accent);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .proof-number .cur{font-size:.5em;vertical-align:top;color:var(--paper-dim);margin-right:1px}
 .proof-metric{margin-top:8px;font-size:13.5px;color:var(--paper-dim)}
 .proof-vs{margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-mute)}
@@ -103,7 +106,7 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);l
 /* ---- pricing ---- */
 .tiers{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:880px){.tiers{grid-template-columns:1fr}}
-.tier{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:var(--panel);display:flex;flex-direction:column;position:relative}
+.tier{border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;background:var(--panel);display:flex;flex-direction:column;position:relative;transition:border-color .2s,box-shadow .2s}
 .tier-name{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-mute)}
 .tier-price{font-family:'Fraunces',serif;font-weight:500;font-size:42px;margin:14px 0 2px;letter-spacing:-.02em}
 .tier-price .per{font-size:15px;color:var(--paper-mute);font-family:'Inter',sans-serif}
@@ -190,6 +193,78 @@ header .wrap, section .wrap{position:relative;z-index:1}
 }
 @media(prefers-reduced-motion:no-preference){
   .yucca-bg{transition:opacity .6s ease}
+}
+
+/* ---- scroll reveal ----
+   Declared after the component styles so the transform/transition here wins on
+   equal specificity, and before the hover block below so hover lifts win over
+   .reveal.is-visible{transform:none}. */
+@media(prefers-reduced-motion:no-preference){
+  /* .js gate: without it the content is never hidden, so a failed or blocked
+     bundle degrades to a plain visible page rather than blank sections. */
+  .js .reveal{
+    opacity:0;
+    transform:translateY(16px);
+    transition:opacity .6s cubic-bezier(.22,.61,.36,1),
+               transform .6s cubic-bezier(.22,.61,.36,1),
+               background .2s,
+               border-color .2s,
+               box-shadow .2s;
+  }
+  .js .reveal.is-visible{opacity:1;transform:none}
+}
+
+/* ---- hover states ----
+   Every hoverable card here (.svc, .tier, .case-panel) is also a .reveal, and
+   .reveal owns the opacity/transform transitions at a 600ms entrance duration.
+   So hover effects use background/border/shadow only: a transform lift would
+   both fight .reveal.is-visible{transform:none} at equal specificity and
+   inherit that 600ms timing, making the hover feel sluggish. */
+@media(hover:hover){
+  .svc:hover{background:var(--panel)}
+  .tier:hover{
+    border-color:var(--accent);
+    box-shadow:0 6px 20px rgba(42,38,32,.07);
+  }
+}
+
+/* ---- hero entrance ----
+   Runs on load and again on each client-side navigation, since PageTransition
+   remounts on pathname change. Applied to the hero's children rather than a
+   wrapper so no transform lands on an ancestor of the sticky nav. */
+@media(prefers-reduced-motion:no-preference){
+  .hero .wrap > *{animation:hero-in .6s cubic-bezier(.22,.61,.36,1) both}
+  .hero .wrap > *:nth-child(1){animation-delay:.04s}
+  .hero .wrap > *:nth-child(2){animation-delay:.10s}
+  .hero .wrap > *:nth-child(3){animation-delay:.17s}
+  .hero .wrap > *:nth-child(4){animation-delay:.23s}
+  .hero .wrap > *:nth-child(5){animation-delay:.29s}
+  .hero .wrap > *:nth-child(6){animation-delay:.35s}
+}
+@keyframes hero-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* ---- case file tabs ---- */
+.case-tabs{display:flex;flex-wrap:wrap;gap:4px;padding:14px 22px 0}
+.case-tab{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--paper-mute);background:transparent;
+  border:1px solid transparent;border-radius:8px;padding:9px 14px;
+  cursor:pointer;transition:color .2s,background .2s,border-color .2s;
+}
+.case-tab:hover{color:var(--paper);background:var(--panel)}
+.case-tab.is-active{color:var(--accent-deep);background:var(--panel);border-color:var(--line)}
+.case-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.case-tabs+.proof-body{padding-top:14px}
+@media(prefers-reduced-motion:no-preference){
+  .case-panel{animation:case-in .4s cubic-bezier(.22,.61,.36,1) both}
+}
+@keyframes case-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-width:720px){
+  .case-tabs{padding:14px 16px 0;gap:3px}
+  .case-tab{font-size:10px;padding:8px 10px;letter-spacing:.05em}
+  /* The three panels wrap to different line counts at this width (267/267/248px),
+     so pin the height to the tallest and stop the panel jumping on switch. */
+  .case-panel{min-height:270px}
 }
 
 /* ---- legal pages ---- */
