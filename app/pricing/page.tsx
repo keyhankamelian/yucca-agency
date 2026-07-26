@@ -50,9 +50,11 @@ export default function Pricing() {
               </div>
               <ul>
                 <li>One platform (Meta, TikTok, or Google Ads)</li>
-                <li>Creative direction — we tell you what to shoot</li>
-                <li>You shoot &amp; edit, we launch &amp; manage</li>
-                <li>Monthly performance report</li>
+                <li>You shoot, we edit, launch &amp; manage</li>
+                <li>Advanced targeting</li>
+                <li>Website, funnel &amp; offer audit</li>
+                <li>Weekly performance report</li>
+                <li>Monthly strategy call</li>
                 <li>Up to ~$3k ad spend managed</li>
                 <li>
                   Onboarding: <s>$500</s>{' '}
@@ -73,10 +75,14 @@ export default function Pricing() {
               </div>
               <ul>
                 <li>Two platforms (Meta, TikTok, or Google Ads)</li>
-                <li>Creative direction — we edit your footage</li>
-                <li>Trend &amp; AI-assisted targeting</li>
+                <li>Creative direction — we tell you what to shoot</li>
+                <li>We edit, launch &amp; manage</li>
+                <li>Advanced targeting</li>
+                <li>Custom audiences</li>
+                <li>Website, funnel &amp; offer audit</li>
+                <li>Weekly reports</li>
                 <li>Monthly strategy call</li>
-                <li>Up to ~$10k ad spend managed</li>
+                <li>Up to ~$6k ad spend managed</li>
                 <li>
                   Onboarding: <s>$750</s>{' '}
                   <span className="waived">waived through July 31</span>
@@ -92,13 +98,18 @@ export default function Pricing() {
                 Custom<span className="per"> pricing</span>
               </div>
               <div className="tier-desc">
-                Full-funnel for businesses with serious volume.
+                For businesses with serious volume.
               </div>
               <ul>
                 <li>Multi-platform paid social</li>
+                <li>Creative direction — we tell you what to shoot</li>
                 <li>Full production — we shoot &amp; edit for you</li>
-                <li>SEO &amp; landing pages available add-on</li>
+                <li>Advanced targeting &amp; custom audiences</li>
+                <li>Website, funnel &amp; offer audit</li>
+                <li>Weekly reporting</li>
                 <li>Biweekly calls &amp; priority support</li>
+                <li>We&apos;ll be your growth partner</li>
+                <li>Unlimited ad spend managed</li>
                 <li>
                   Onboarding:{' '}
                   <span className="waived">waived through July 31</span>
