@@ -168,7 +168,7 @@ export default function Pricing() {
                 Local and organic search work, for when you&apos;re ready to
                 stop renting every customer.
               </p>
-              <div className="addon-price">Monthly add-on</div>
+              <div className="addon-price">Priced per market</div>
             </Reveal>
           </div>
 
