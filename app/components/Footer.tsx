@@ -39,7 +39,7 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-        <p>Yucca Agency · Digital marketing · Los Angeles, CA · © 2026</p>
+        <p>Yucca Agency · Digital marketing · © 2026</p>
         <p className="foot-legal">
           <a href="/privacy">Privacy Policy</a>
         </p>

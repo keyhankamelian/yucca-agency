@@ -117,7 +117,21 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);l
 .tier li s{color:var(--paper-mute)}
 .tier li .waived{color:var(--accent-deep);font-weight:600}
 .tier .btn{width:100%;justify-content:center}
-.tier-note{margin-top:22px;text-align:center;font-size:13px;color:var(--paper-mute);font-family:'IBM Plex Mono',monospace}
+/* max-width + balance keeps the longer notes from running the full page width
+   and orphaning a word or two onto the last line. */
+.tier-note{margin:22px auto 0;max-width:74ch;text-align:center;font-size:13px;color:var(--paper-mute);font-family:'IBM Plex Mono',monospace;text-wrap:balance}
+/* Plex Mono is loaded at 400/500 only, so 500 is the heaviest real weight
+   available here; anything above it would be synthesised. */
+.tier-note--strong{font-weight:500;font-size:13.5px;color:var(--paper)}
+
+/* ---- add-on cards ---- */
+.addons-label{margin-top:34px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-mute)}
+.addons{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.addon{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:22px 24px;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+.addon-name{font-family:'Fraunces',serif;font-weight:500;font-size:19px;letter-spacing:-.01em}
+.addon-desc{margin-top:6px;font-size:13.5px;line-height:1.5;color:var(--paper-dim);flex:1}
+.addon-price{margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;color:var(--accent-deep)}
+@media(max-width:720px){.addons{grid-template-columns:1fr}}
 
 /* ---- highlight box (reused for editorial callouts across sections) ---- */
 .highlight{margin-top:28px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius);background:var(--panel);padding:26px 28px}
@@ -222,7 +236,7 @@ header .wrap, section .wrap{position:relative;z-index:1}
    inherit that 600ms timing, making the hover feel sluggish. */
 @media(hover:hover){
   .svc:hover{background:var(--panel)}
-  .tier:hover{
+  .tier:hover,.addon:hover{
     border-color:var(--accent);
     box-shadow:0 6px 20px rgba(42,38,32,.07);
   }

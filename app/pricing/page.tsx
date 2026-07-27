@@ -121,7 +121,7 @@ export default function Pricing() {
             </Reveal>
           </div>
 
-          <p className="tier-note">
+          <p className="tier-note tier-note--strong">
             Ad spend is paid directly to the platforms by you and stays
             separate from these fees.{' '}
             <span className="waived">
@@ -144,11 +144,35 @@ export default function Pricing() {
             </div>
           </div>
 
-          <p className="tier-note">
-            Full video production (shoot + edit): priced per project ·
-            Landing pages from $1,000 · SEO available as a monthly add-on.
-            Mention it on the call.
-          </p>
+          <div className="addons-label">Available add-ons</div>
+          <div className="addons">
+            <Reveal className="addon">
+              <div className="addon-name">Full video production</div>
+              <p className="addon-desc">
+                Don&apos;t want to shoot it yourself? We shoot and edit the
+                whole thing, finalized.
+              </p>
+              <div className="addon-price">Priced per project</div>
+            </Reveal>
+            <Reveal className="addon" delayMs={80}>
+              <div className="addon-name">Landing pages</div>
+              <p className="addon-desc">
+                Conversion-first pages built and tested, for when your funnel
+                needs one.
+              </p>
+              <div className="addon-price">From $1,000</div>
+            </Reveal>
+            <Reveal className="addon" delayMs={160}>
+              <div className="addon-name">SEO</div>
+              <p className="addon-desc">
+                Local and organic search work, for when you&apos;re ready to
+                stop renting every customer.
+              </p>
+              <div className="addon-price">Monthly add-on</div>
+            </Reveal>
+          </div>
+
+          <p className="tier-note">Mention any of these on the call.</p>
         </div>
       </section>
 
