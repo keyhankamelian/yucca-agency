@@ -25,7 +25,7 @@ export default function Nav() {
           <Link href="/about">About</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/#consult" className="nav-cta">
-            Free consultation
+            Free funnel audit
           </Link>
         </div>
       </div>

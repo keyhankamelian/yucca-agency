@@ -2,34 +2,22 @@
 
 import { useEffect, useState } from 'react';
 
+// Trimmed from 27 to the highest-value verticals. Long enough to signal range
+// for a broad positioning, short enough to read as considered rather than
+// "we'll take anyone".
 const WORDS = [
-  'gyms',
   'dentists',
+  'med spas',
+  'chiropractors',
   'lawyers',
   'contractors',
-  'beauty salons',
+  'gyms',
   'spas',
-  'accountants',
-  'freelancers',
-  'brands',
-  'e-commerce',
-  'restaurants',
-  'musicians',
-  'labels',
-  'cafes',
-  'small businesses',
-  'painters',
-  'creators',
-  'artists',
-  'mobile detailing',
-  'real estate agents',
-  'med spas',
-  'photographers',
-  'chiropractors',
-  'barbershops',
+  'salons',
   'coaches',
-  'interior designers',
+  'real estate agents',
   'auto shops',
+  'e-commerce brands',
 ];
 
 const TYPE_MS = 45;

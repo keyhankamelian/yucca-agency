@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="promo-bar">
         <a href="/pricing">
-          Onboarding fees waived through July 31. See plans →
+          Onboarding fees waived through August 31. See plans →
         </a>
       </div>
       <Nav />
@@ -57,19 +57,32 @@ export default function Home() {
             <em>outgrow</em> your competition.
           </h1>
           <p className="hero-sub">
-            Paid social campaigns for service businesses and brands: dentists,
-            contractors, gyms, spas, and more. Built to grow your ROI, with no
-            long-term contracts. SEO and full-funnel optimization or
-            build-out available if you need them.
+            Paid social ads and full-funnel builds for service businesses,
+            brands, and startups — dentists, chiropractors, contractors,
+            lawyers, gyms, spas, and more. No long-term contracts, built to
+            return 2&ndash;7x your ad spend.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
-              Book a free consultation →
+              Get a free funnel audit →
             </a>
-            <a href="#proof" className="btn btn-ghost">
-              See the numbers
-            </a>
+          </div>
+          <div className="hero-proof">
+            <div className="hero-proof-item">
+              <span className="hero-proof-n">$7.38</span>
+              <span className="hero-proof-l">per lead · orthodontics</span>
+            </div>
+            <span className="hero-proof-sep" aria-hidden="true" />
+            <div className="hero-proof-item">
+              <span className="hero-proof-n">$2.20</span>
+              <span className="hero-proof-l">per lead · auto dealership</span>
+            </div>
+            <span className="hero-proof-sep" aria-hidden="true" />
+            <div className="hero-proof-item">
+              <span className="hero-proof-n">4.3x</span>
+              <span className="hero-proof-l">return · contractor</span>
+            </div>
           </div>
           <div className="partners">
             <span className="partners-label">Certified</span>
@@ -117,13 +130,20 @@ export default function Home() {
               </p>
             </Reveal>
           </div>
+
+          <p className="not-for">
+            <strong>This isn&apos;t for you if:</strong> you need results this
+            week<span className="sep">·</span>you won&apos;t film anything,
+            ever<span className="sep">·</span>you&apos;re shopping purely on
+            price.
+          </p>
         </div>
       </section>
 
       <section id="services">
         <div className="wrap">
-          <div className="sec-eyebrow">What we run</div>
-          <h2>Paid social is the core. We&apos;ll add the rest if you need it.</h2>
+          <div className="sec-eyebrow">How it works</div>
+          <h2>You film it. We do everything else.</h2>
           <p className="sec-lede">
             Most agencies hand you a media buyer and leave the creative to
             you. We combine campaign experience with an eye for what actually
@@ -132,69 +152,42 @@ export default function Home() {
           <div className="svc-grid">
             <Reveal className="svc">
               <div className="ix">01</div>
-              <h3>Paid social advertising</h3>
+              <h3>We tell you what to film</h3>
               <p>
-                Meta, Instagram, and TikTok campaigns built around your
-                cost-per-lead target, not vanity reach.
+                No crew, no studio, no script to memorize. Your phone and a
+                window are enough. We send you the exact shot list.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={60}>
               <div className="ix">02</div>
-              <h3>Creative direction</h3>
+              <h3>We edit, launch, and manage</h3>
               <p>
-                We tell you exactly what to shoot. Send us the footage and
-                we&apos;ll cut it into ads built to perform.
+                Send us the footage. We cut it into ads, run them on Meta,
+                Instagram, or TikTok, and manage the spend day to day.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={120}>
               <div className="ix">03</div>
-              <h3>Full production (add-on)</h3>
+              <h3>We audit everything the ad touches</h3>
               <p>
-                Don&apos;t want to shoot it yourself? We can shoot and edit
-                the whole thing, finalized, for a fee.
-              </p>
-            </Reveal>
-            <Reveal className="svc" delayMs={60}>
-              <div className="ix">04</div>
-              <h3>Advanced targeting</h3>
-              <p>
-                We pair AI tools with real campaign experience to catch
-                trends and audiences before they&apos;re played out.
-              </p>
-            </Reveal>
-            <Reveal className="svc" delayMs={120}>
-              <div className="ix">05</div>
-              <h3>Landing pages (add-on)</h3>
-              <p>
-                Conversion-first pages built and tested, priced separately if
-                your funnel needs one.
-              </p>
-            </Reveal>
-            <Reveal className="svc" delayMs={180}>
-              <div className="ix">06</div>
-              <h3>SEO (add-on)</h3>
-              <p>
-                Local and organic search work, available add-on for when
-                you&apos;re ready to stop renting every customer from ad
-                platforms.
+                Your page, your offer, your follow-up. Great targeting still
+                fails if it sends the right person to the wrong place.
               </p>
             </Reveal>
           </div>
 
           <Reveal className="highlight">
             <div className="highlight-copy">
-              <div className="highlight-label">Beyond the campaign</div>
+              <div className="highlight-label">What the audit covers</div>
               <div className="highlight-name">
-                We audit the whole funnel, not just the targeting
+                Where campaigns actually break
               </div>
               <p className="highlight-desc">
-                Great targeting can still send the right person to the wrong
-                page. We audit your branding, landing page, and offer to make
-                sure they&apos;re aligned with the campaign, so the leads we
-                bring in convert at the highest intent and the best return.
-                Need work? We&apos;ll optimize what you have for a fee, or
-                build it from scratch for a fee if you don&apos;t have one
-                yet.
+                The page your ad points to. The offer sitting on it. How fast
+                you reply when a lead comes in. Whether any of it is being
+                tracked at all. We check all four before we touch your budget,
+                and tell you what we find either way. If something needs
+                building or fixing, we can do that too.
               </p>
             </div>
           </Reveal>
@@ -206,6 +199,72 @@ export default function Home() {
           </div>
           <div style={{ marginTop: '24px' }}>
             <CaseFiles />
+          </div>
+
+          <Reveal className="highlight">
+            <div className="highlight-copy">
+              <div className="highlight-label">
+                Included with every plan — free
+              </div>
+              <div className="highlight-name">The Lead-to-Client System</div>
+              <p className="highlight-desc">
+                Getting the lead is half the job. Our 5-step playbook covers
+                the other half: call scripts, follow-up templates, objection
+                handlers, and a no-show prevention checklist. Sent to you free
+                once you sign on, no matter the plan.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal className="market-note">
+            <p>
+              <strong>One client per market.</strong> We work with a small
+              number of clients at a time, and never two who compete with each
+              other, so the strategy we build stays yours.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div className="wrap">
+          <div className="sec-eyebrow">Common questions</div>
+          <h2>The things everyone asks before they call.</h2>
+          <div className="faq">
+            <Reveal className="faq-item">
+              <div className="faq-q">How long before I see leads?</div>
+              <p className="faq-a">
+                Most campaigns start producing inside the first two weeks. The
+                first 30 days are partly the platform learning who your buyer
+                is, so expect it to get cheaper over time, not worse. You get a
+                report every week, so you watch it happen instead of waiting.
+              </p>
+            </Reveal>
+            <Reveal className="faq-item" delayMs={70}>
+              <div className="faq-q">What do I actually have to do?</div>
+              <p className="faq-a">
+                Film a few clips on your phone. We tell you exactly what to
+                shoot, then we edit, launch, and manage everything else. Plan
+                on an hour or two in the first month, and less after that.
+              </p>
+            </Reveal>
+            <Reveal className="faq-item" delayMs={140}>
+              <div className="faq-q">How much do I need for ad spend?</div>
+              <p className="faq-a">
+                Budget at least $1,000 a month for the ads themselves, on top
+                of our fee. That is paid straight to the platforms, not to us.
+                We&apos;ll model your real numbers on the audit call before you
+                commit to anything.
+              </p>
+            </Reveal>
+            <Reveal className="faq-item" delayMs={210}>
+              <div className="faq-q">Am I locked into a contract?</div>
+              <p className="faq-a">
+                No. Month to month, always. Your ad account stays in your name
+                and you keep everything we build in it, so if you leave, you
+                leave with it.
+              </p>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -229,7 +288,7 @@ export default function Home() {
       <section className="cta-sec" id="consult">
         <div className="wrap cta-grid">
           <div className="cta-left">
-            <div className="sec-eyebrow">Free consultation</div>
+            <div className="sec-eyebrow">Free funnel audit</div>
             <h2>A quick call. A real plan. No obligation.</h2>
             <div className="cta-points">
               <Reveal className="cta-point">

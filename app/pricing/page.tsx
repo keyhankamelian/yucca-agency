@@ -58,7 +58,7 @@ export default function Pricing() {
                 <li>Up to ~$3k ad spend managed</li>
                 <li>
                   Onboarding: <s>$500</s>{' '}
-                  <span className="waived">waived through July 31</span>
+                  <span className="waived">waived through August 31</span>
                 </li>
               </ul>
               <a href="/#consult" className="btn btn-ghost">
@@ -85,11 +85,11 @@ export default function Pricing() {
                 <li>Up to ~$6k ad spend managed</li>
                 <li>
                   Onboarding: <s>$750</s>{' '}
-                  <span className="waived">waived through July 31</span>
+                  <span className="waived">waived through August 31</span>
                 </li>
               </ul>
               <a href="/#consult" className="btn btn-ghost">
-                Book my free strategy session
+                Get my free funnel audit
               </a>
             </Reveal>
             <Reveal className="tier" delayMs={160}>
@@ -112,7 +112,7 @@ export default function Pricing() {
                 <li>Unlimited ad spend managed</li>
                 <li>
                   Onboarding:{' '}
-                  <span className="waived">waived through July 31</span>
+                  <span className="waived">waived through August 31</span>
                 </li>
               </ul>
               <a href="/#consult" className="btn btn-ghost">
@@ -125,7 +125,7 @@ export default function Pricing() {
             Ad spend is paid directly to the platforms by you and stays
             separate from these fees.{' '}
             <span className="waived">
-              Onboarding fees are waived through July 31.
+              Onboarding fees are waived through August 31.
             </span>
           </p>
 

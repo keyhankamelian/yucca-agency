@@ -26,7 +26,7 @@ export default function LeadForm() {
           <h3>Got it — talk soon.</h3>
           <p>
             We&apos;ll review your business and reach out within one business
-            day to schedule your consultation.
+            day to schedule your funnel audit.
           </p>
         </div>
       </form>
@@ -78,44 +78,34 @@ export default function LeadForm() {
             placeholder="(000) 000-0000"
           />
         </div>
-        <div className="row2">
-          <div className="fld">
-            <label htmlFor="location">Location</label>
-            <input
-              id="location"
-              name="location"
-              type="text"
-              placeholder="City, State"
-              required
-            />
-          </div>
-          <div className="fld">
-            <label htmlFor="type">Business type</label>
-            <select id="type" name="business_type" defaultValue="" required>
-              <option value="" disabled>
-                Select one
-              </option>
-              <option>Dental / orthodontics</option>
-              <option>Law firm</option>
-              <option>Contractor / home services</option>
-              <option>Gym / fitness</option>
-              <option>Beauty / salon / spa</option>
-              <option>Therapist / wellness</option>
-              <option>E-commerce / DTC brand</option>
-              <option>Other</option>
-            </select>
-          </div>
+        <div className="fld">
+          <label htmlFor="type">Business type</label>
+          <select id="type" name="business_type" defaultValue="" required>
+            <option value="" disabled>
+              Select one
+            </option>
+            <option>Dental / orthodontics</option>
+            <option>Med spa / aesthetics</option>
+            <option>Chiropractic / wellness</option>
+            <option>Law firm</option>
+            <option>Contractor / home services</option>
+            <option>Gym / fitness</option>
+            <option>Beauty / salon / spa</option>
+            <option>Coach / consultant</option>
+            <option>E-commerce / DTC brand</option>
+            <option>Other</option>
+          </select>
         </div>
         <button
           type="submit"
           className="btn btn-primary"
           disabled={state.submitting}
         >
-          Get my free consultation →
+          Get my free funnel audit →
         </button>
         <p className="form-fine">
-          We&apos;ll reach out within one business day to schedule your
-          30-minute call, if we&apos;re a fit.
+          We&apos;ll reach out within one business day. No obligation, and no
+          sales pressure on the call.
         </p>
         {state.errors && (
           <p className="form-error" id="formError" style={{ display: 'block' }}>
