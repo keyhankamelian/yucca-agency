@@ -251,7 +251,7 @@ export default function Home() {
             <Reveal className="faq-item" delayMs={140}>
               <div className="faq-q">How much do I need for ad spend?</div>
               <p className="faq-a">
-                Budget at least $1,000 a month for the ads themselves, on top
+                Budget at least $500 a month for the ads themselves, on top
                 of our fee. That is paid straight to the platforms, not to us.
                 We&apos;ll model your real numbers on the audit call before you
                 commit to anything.
