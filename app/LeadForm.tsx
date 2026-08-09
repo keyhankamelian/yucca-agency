@@ -9,6 +9,8 @@ declare global {
   }
 }
 
+const CALENDLY_URL = 'https://calendly.com/hello-yuccaagency/30min';
+
 export default function LeadForm() {
   const [state, handleSubmit] = useForm('xkolqpnb');
 
@@ -25,8 +27,28 @@ export default function LeadForm() {
           <div className="check">✓</div>
           <h3>Got it — talk soon.</h3>
           <p>
-            We&apos;ll review your business and reach out within one business
-            day to schedule your strategy session.
+            Want to skip the back-and-forth? Pick a time that works for you
+            right now.
+          </p>
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            onClick={() => {
+              // Custom rather than the standard "Schedule" event: this fires on
+              // click, not on a confirmed booking, so it must not be mistaken
+              // for one when optimising campaigns.
+              if (typeof window.fbq === 'function') {
+                window.fbq('trackCustom', 'CalendlyOpened');
+              }
+            }}
+          >
+            Pick my time →
+          </a>
+          <p className="form-fine">
+            Or sit tight, and we&apos;ll reach out within one business day to
+            schedule it for you.
           </p>
         </div>
       </form>
