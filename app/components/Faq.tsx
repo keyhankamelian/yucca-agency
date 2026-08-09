@@ -1,11 +1,23 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import Reveal from './Reveal';
 
-type Item = { q: string; a: string };
+type Item = { q: string; a: React.ReactNode };
 
 const ITEMS: Item[] = [
+  {
+    q: 'What does it cost?',
+    a: (
+      <>
+        Plans start at $1,000 a month, and our pricing is public. No &ldquo;book
+        a call to find out.&rdquo; The{' '}
+        <Link href="/pricing">pricing page</Link> lists exactly what each plan
+        includes.
+      </>
+    ),
+  },
   {
     q: 'How long before I see leads?',
     a: 'Most campaigns start producing inside the first two weeks. The first 30 days are partly the platform learning who your buyer is, so expect it to get cheaper over time, not worse. You get a report every week, so you watch it happen instead of waiting.',
@@ -20,7 +32,7 @@ const ITEMS: Item[] = [
   },
   {
     q: 'Am I locked into a contract?',
-    a: 'No. Month to month, always. Your ad account stays in your name and you keep everything we build in it, so if you leave, you leave with it.',
+    a: 'No. Month to month, always. Your ad account stays in your name and you keep everything we build in it, so if you leave, you leave with it. And the rate you sign at is the rate you keep, for as long as you stay on your plan.',
   },
 ];
 

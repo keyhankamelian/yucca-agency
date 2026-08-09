@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Reveal from './components/Reveal';
 import CaseFiles from './components/CaseFiles';
 import Faq from './components/Faq';
+import StickyCta from './components/StickyCta';
 
 export default function Home() {
   return (
@@ -267,6 +268,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <StickyCta />
     </>
   );
 }

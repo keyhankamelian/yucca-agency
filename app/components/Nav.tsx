@@ -1,10 +1,31 @@
+'use client';
+
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+const LINKS = [
+  { href: '/#services', label: 'Services' },
+  { href: '/about', label: 'About' },
+  { href: '/pricing', label: 'Pricing' },
+];
 
 export default function Nav() {
+  const [open, setOpen] = useState(false);
+
+  // Escape closes the panel, matching standard disclosure behaviour.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open]);
+
   return (
     <nav>
       <div className="wrap nav-in">
-        <Link href="/" className="logo">
+        <Link href="/" className="logo" onClick={() => setOpen(false)}>
           <svg
             className="mark"
             viewBox="0 2.5 24 24"
@@ -21,11 +42,41 @@ export default function Nav() {
           Yucca
         </Link>
         <div className="nav-links">
-          <Link href="/#services">Services</Link>
-          <Link href="/about">About</Link>
-          <Link href="/pricing">Pricing</Link>
+          {LINKS.map((l) => (
+            <Link key={l.href} href={l.href}>
+              {l.label}
+            </Link>
+          ))}
           <Link href="/#consult" className="nav-cta">
             Free strategy session
+          </Link>
+          <button
+            type="button"
+            className={`nav-toggle${open ? ' is-open' : ''}`}
+            aria-expanded={open}
+            aria-controls="nav-panel"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="nav-toggle-bars" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile only. Desktop keeps the inline links above. */}
+      <div id="nav-panel" className={`nav-panel${open ? ' is-open' : ''}`}>
+        <div className="nav-panel-inner">
+          {LINKS.map((l) => (
+            <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/#consult"
+            className="nav-panel-cta"
+            onClick={() => setOpen(false)}
+          >
+            Free strategy session →
           </Link>
         </div>
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Reveal from '../components/Reveal';
+import StickyCta from '../components/StickyCta';
 
 export const metadata: Metadata = {
   title: 'Pricing - Yucca Agency',
@@ -37,13 +38,15 @@ export default function Pricing() {
           <h2>You don&apos;t need a $3–5k retainer to start.</h2>
           <p className="sec-lede">
             Three straightforward plans, built around how much campaign you
-            actually need.
+            actually need. <strong>The rate you start at is the rate you
+            keep</strong>, for as long as you stay on your plan.
           </p>
           <div className="tiers">
             <Reveal className="tier">
               <div className="tier-name">Launch</div>
               <div className="tier-price">
-                $1,000<span className="per">/mo</span>
+                <span className="from">From </span>$1,000
+                <span className="per">/mo</span>
               </div>
               <div className="tier-desc">
                 For businesses running their first real paid social campaign.
@@ -68,7 +71,8 @@ export default function Pricing() {
             <Reveal className="tier" delayMs={80}>
               <div className="tier-name">Growth</div>
               <div className="tier-price">
-                $2,000<span className="per">/mo</span>
+                <span className="from">From </span>$2,000
+                <span className="per">/mo</span>
               </div>
               <div className="tier-desc">
                 For businesses ready to scale what&apos;s already converting.
@@ -129,6 +133,11 @@ export default function Pricing() {
             </span>
           </p>
 
+          <p className="tier-note">
+            Rates are locked for active plans. If you cancel and come back
+            later, current pricing applies.
+          </p>
+
           <div className="highlight">
             <div className="highlight-copy">
               <div className="highlight-label">
@@ -177,6 +186,7 @@ export default function Pricing() {
       </section>
 
       <Footer />
+      <StickyCta />
     </>
   );
 }
