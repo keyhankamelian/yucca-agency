@@ -2,22 +2,17 @@
 
 import { useEffect, useState } from 'react';
 
-// Trimmed from 27 to the highest-value verticals. Long enough to signal range
-// for a broad positioning, short enough to read as considered rather than
-// "we'll take anyone".
+// The niche: appointment-based service businesses. Every vertical here sells
+// time slots on a calendar, which is what "We fill your calendar" promises.
 const WORDS = [
   'dentists',
   'med spas',
   'chiropractors',
-  'lawyers',
-  'contractors',
-  'gyms',
-  'spas',
-  'salons',
+  'acupuncturists',
+  'fitness studios',
   'coaches',
-  'real estate agents',
-  'auto shops',
-  'e-commerce brands',
+  'beauty salons',
+  'lawyers',
 ];
 
 const TYPE_MS = 45;
@@ -41,7 +36,7 @@ export default function RotatingAudience() {
   // Reduced motion: swap whole words on a timer, no letter-by-letter typing.
   useEffect(() => {
     if (!reducedMotion) return;
-    setText(WORDS[wordIndex]);
+    setText(WORDS[wordIndex % WORDS.length]);
     const t = setTimeout(() => {
       setWordIndex((i) => (i + 1) % WORDS.length);
     }, HOLD_MS);
@@ -49,9 +44,11 @@ export default function RotatingAudience() {
   }, [reducedMotion, wordIndex]);
 
   // Full motion: type in, hold, delete, move to next word.
+  // The modulo guards against a stale out-of-range index (e.g. hot reload
+  // after the list shrinks); in production the index never exceeds bounds.
   useEffect(() => {
     if (reducedMotion) return;
-    const word = WORDS[wordIndex];
+    const word = WORDS[wordIndex % WORDS.length];
     let timeout: ReturnType<typeof setTimeout>;
 
     if (phase === 'typing') {

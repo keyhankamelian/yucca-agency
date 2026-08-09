@@ -16,7 +16,7 @@ const siteUrl =
 
 const title = 'Yucca Agency - Digital Marketing';
 const description =
-  'Paid social campaigns for dentists, lawyers, contractors, gyms, salons, spas, and other service and ecommerce brands — built on trend-aware creative, AI-assisted targeting, and real campaign experience. No $3-5k/mo retainer required.';
+  'Paid social ads for appointment-based businesses: dentists, med spas, chiropractors, fitness studios, coaches, and lawyers. LA-based, no long-term contracts. Book a free strategy session.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

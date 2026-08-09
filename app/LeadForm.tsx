@@ -26,7 +26,7 @@ export default function LeadForm() {
           <h3>Got it — talk soon.</h3>
           <p>
             We&apos;ll review your business and reach out within one business
-            day to schedule your funnel audit.
+            day to schedule your strategy session.
           </p>
         </div>
       </form>
@@ -87,12 +87,12 @@ export default function LeadForm() {
             <option>Dental / orthodontics</option>
             <option>Med spa / aesthetics</option>
             <option>Chiropractic / wellness</option>
+            <option>Acupuncture</option>
             <option>Law firm</option>
             <option>Contractor / home services</option>
             <option>Gym / fitness</option>
             <option>Beauty / salon / spa</option>
             <option>Coach / consultant</option>
-            <option>E-commerce / DTC brand</option>
             <option>Other</option>
           </select>
         </div>
@@ -101,11 +101,11 @@ export default function LeadForm() {
           className="btn btn-primary"
           disabled={state.submitting}
         >
-          Get my free funnel audit →
+          Get my free strategy session →
         </button>
         <p className="form-fine">
-          We&apos;ll reach out within one business day. No obligation, and no
-          sales pressure on the call.
+          We&apos;ll reach out within one business day to schedule your
+          30-minute call.
         </p>
         {state.errors && (
           <p className="form-error" id="formError" style={{ display: 'block' }}>

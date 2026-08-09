@@ -89,7 +89,7 @@ export default function Pricing() {
                 </li>
               </ul>
               <a href="/#consult" className="btn btn-ghost">
-                Get my free funnel audit
+                Book my free strategy session
               </a>
             </Reveal>
             <Reveal className="tier" delayMs={160}>

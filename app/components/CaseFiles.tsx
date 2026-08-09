@@ -20,7 +20,7 @@ const CASES: CaseFile[] = [
   {
     id: 'ortho',
     tab: 'Orthodontics',
-    vert: 'Orthodontics · Los Angeles, CA · Meta Ads',
+    vert: 'Dr. Tania Ohebsion, DDS · Los Angeles, CA · Meta Ads',
     value: 7.38,
     decimals: 2,
     currency: true,

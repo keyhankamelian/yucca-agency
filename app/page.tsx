@@ -4,13 +4,14 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
 import CaseFiles from './components/CaseFiles';
+import Faq from './components/Faq';
 
 export default function Home() {
   return (
     <>
       <div className="promo-bar">
         <a href="/pricing">
-          Onboarding fees waived through August 31. See plans →
+          Onboarding fees waived through August 31
         </a>
       </div>
       <Nav />
@@ -51,38 +52,24 @@ export default function Home() {
           </svg>
         </div>
         <div className="wrap">
-          <div className="eyebrow">Paid social ads · Lead gen · Market growth</div>
+          <div className="eyebrow">
+            Paid social ads · Lead generation · Revenue &amp; social growth
+          </div>
           <h1>
-            We don&apos;t just do marketing for your business. We{' '}
-            <em>outgrow</em> your competition.
+            We fill your <em>calendar</em>. You do the work you&apos;re
+            actually good at.
           </h1>
           <p className="hero-sub">
-            Paid social ads and full-funnel builds for service businesses,
-            brands, and startups — dentists, chiropractors, contractors,
-            lawyers, gyms, spas, and more. No long-term contracts, built to
-            return 2&ndash;7x your ad spend.
+            Paid social ads and everything that happens after the click. For
+            appointment-based businesses — dentists, chiropractors, med spas,
+            fitness studios, lawyers, and more. No long-term contracts, built
+            to return 2&ndash;10x your ad spend.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
-              Get a free funnel audit →
+              Get a free strategy session →
             </a>
-          </div>
-          <div className="hero-proof">
-            <div className="hero-proof-item">
-              <span className="hero-proof-n">$7.38</span>
-              <span className="hero-proof-l">per lead · orthodontics</span>
-            </div>
-            <span className="hero-proof-sep" aria-hidden="true" />
-            <div className="hero-proof-item">
-              <span className="hero-proof-n">$2.20</span>
-              <span className="hero-proof-l">per lead · auto dealership</span>
-            </div>
-            <span className="hero-proof-sep" aria-hidden="true" />
-            <div className="hero-proof-item">
-              <span className="hero-proof-n">4.3x</span>
-              <span className="hero-proof-l">return · contractor</span>
-            </div>
           </div>
           <div className="partners">
             <span className="partners-label">Certified</span>
@@ -130,24 +117,18 @@ export default function Home() {
               </p>
             </Reveal>
           </div>
-
-          <p className="not-for">
-            <strong>This isn&apos;t for you if:</strong> you need results this
-            week<span className="sep">·</span>you won&apos;t film anything,
-            ever<span className="sep">·</span>you&apos;re shopping purely on
-            price.
-          </p>
         </div>
       </section>
 
       <section id="services">
         <div className="wrap">
           <div className="sec-eyebrow">How it works</div>
-          <h2>You film it. We do everything else.</h2>
+          <h2>An agency that does the heavy lifting.</h2>
           <p className="sec-lede">
-            Most agencies hand you a media buyer and leave the creative to
-            you. We combine campaign experience with an eye for what actually
-            performs, and tell you exactly what to shoot.
+            You film a few clips on your phone — we tell you exactly what to
+            shoot. Then we edit, launch, manage, and track everything. A
+            couple hours of your time in month one. (Camera-shy? We offer full
+            production too.)
           </p>
           <div className="svc-grid">
             <Reveal className="svc">
@@ -230,42 +211,7 @@ export default function Home() {
         <div className="wrap">
           <div className="sec-eyebrow">Common questions</div>
           <h2>The things everyone asks before they call.</h2>
-          <div className="faq">
-            <Reveal className="faq-item">
-              <div className="faq-q">How long before I see leads?</div>
-              <p className="faq-a">
-                Most campaigns start producing inside the first two weeks. The
-                first 30 days are partly the platform learning who your buyer
-                is, so expect it to get cheaper over time, not worse. You get a
-                report every week, so you watch it happen instead of waiting.
-              </p>
-            </Reveal>
-            <Reveal className="faq-item" delayMs={70}>
-              <div className="faq-q">What do I actually have to do?</div>
-              <p className="faq-a">
-                Film a few clips on your phone. We tell you exactly what to
-                shoot, then we edit, launch, and manage everything else. Plan
-                on an hour or two in the first month, and less after that.
-              </p>
-            </Reveal>
-            <Reveal className="faq-item" delayMs={140}>
-              <div className="faq-q">How much do I need for ad spend?</div>
-              <p className="faq-a">
-                Budget at least $500 a month for the ads themselves, on top
-                of our fee. That is paid straight to the platforms, not to us.
-                We&apos;ll model your real numbers on the audit call before you
-                commit to anything.
-              </p>
-            </Reveal>
-            <Reveal className="faq-item" delayMs={210}>
-              <div className="faq-q">Am I locked into a contract?</div>
-              <p className="faq-a">
-                No. Month to month, always. Your ad account stays in your name
-                and you keep everything we build in it, so if you leave, you
-                leave with it.
-              </p>
-            </Reveal>
-          </div>
+          <Faq />
         </div>
       </section>
 
@@ -288,8 +234,8 @@ export default function Home() {
       <section className="cta-sec" id="consult">
         <div className="wrap cta-grid">
           <div className="cta-left">
-            <div className="sec-eyebrow">Free funnel audit</div>
-            <h2>A quick call. A real plan. No obligation.</h2>
+            <div className="sec-eyebrow">Free strategy session</div>
+            <h2>A quick call. A real plan.</h2>
             <div className="cta-points">
               <Reveal className="cta-point">
                 <span className="k">[01]</span>
