@@ -31,7 +31,7 @@ export default function About() {
               revenue.
             </p>
             <p className="about-text">
-              Today Yucca works with appointment-based businesses: dentists,
+              Today Yucca works with service businesses: dentists,
               med spas, chiropractors, acupuncturists, fitness studios,
               coaches, salons, and law firms. They all sell the same thing, a
               slot on a calendar, which means the same playbook gets sharper

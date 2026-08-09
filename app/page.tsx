@@ -62,9 +62,8 @@ export default function Home() {
           </h1>
           <p className="hero-sub">
             Paid social ads and everything that happens after the click. For
-            appointment-based businesses — dentists, chiropractors, med spas,
-            fitness studios, lawyers, and more. No long-term contracts, built
-            to return 2&ndash;10x your ad spend.
+            service businesses. No long-term contracts, built to return
+            2&ndash;10x your ad spend.
           </p>
           <RotatingAudience />
           <div className="hero-actions">

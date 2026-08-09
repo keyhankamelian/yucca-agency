@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
-// The niche: appointment-based service businesses. Every vertical here sells
-// time slots on a calendar, which is what "We fill your calendar" promises.
+// The niche: service businesses. Every vertical here sells time slots on a
+// calendar, which is what "We fill your calendar" promises.
 const WORDS = [
   'dentists',
   'med spas',
