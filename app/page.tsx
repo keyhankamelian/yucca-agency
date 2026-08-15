@@ -4,17 +4,11 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
 import CaseFiles from './components/CaseFiles';
-import Faq from './components/Faq';
 import StickyCta from './components/StickyCta';
 
 export default function Home() {
   return (
     <>
-      <div className="promo-bar">
-        <a href="/pricing">
-          Onboarding fees waived through August 31
-        </a>
-      </div>
       <Nav />
 
       <header className="hero">
@@ -61,7 +55,7 @@ export default function Home() {
             actually good at.
           </h1>
           <p className="hero-sub">
-            Paid social ads and everything that happens after the click. For
+            Paid social ads, funnel analysis, build, and optimization. For
             service businesses. No long-term contracts, built to return
             2&ndash;10x your ad spend.
           </p>
@@ -90,7 +84,7 @@ export default function Home() {
       <section id="who-for">
         <div className="wrap">
           <div className="sec-eyebrow">Is this you?</div>
-          <h2>Built for businesses who&apos;ve tried everything except this.</h2>
+          <h2>Most businesses come to us from one of three places.</h2>
           <div className="svc-grid">
             <Reveal className="svc">
               <div className="ix">01</div>
@@ -105,15 +99,15 @@ export default function Home() {
               <h3>Tried it, or tried AI, alone</h3>
               <p>
                 You ran the ads yourself, or let an AI tool run them, and the
-                leads never showed up. We know why.
+                leads never came or booked. We know why.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={140}>
               <div className="ix">03</div>
-              <h3>Priced out by agencies</h3>
+              <h3>Too small for the big agencies</h3>
               <p>
-                Most agencies won&apos;t return your call under a $3,000 to
-                $5,000 monthly retainer. We will.
+                Most agencies won&apos;t return your call under a $5,000
+                monthly retainer. We will.
               </p>
             </Reveal>
           </div>
@@ -125,10 +119,10 @@ export default function Home() {
           <div className="sec-eyebrow">How it works</div>
           <h2>An agency that does the heavy lifting.</h2>
           <p className="sec-lede">
-            You film a few clips on your phone — we tell you exactly what to
-            shoot. Then we edit, launch, manage, and track everything. A
-            couple hours of your time in month one. (Camera-shy? We offer full
-            production too.)
+            We handle the strategy, the creative direction, the editing, the
+            launch, and the day-to-day management. Expect a couple of hours of
+            your time in month one, and less after that. Don&apos;t want to be
+            on camera? We can shoot it for you.
           </p>
           <div className="svc-grid">
             <Reveal className="svc">
@@ -149,7 +143,7 @@ export default function Home() {
             </Reveal>
             <Reveal className="svc" delayMs={120}>
               <div className="ix">03</div>
-              <h3>We audit everything the ad touches</h3>
+              <h3>We audit and optimize everything the ad touches</h3>
               <p>
                 Your page, your offer, your follow-up. Great targeting still
                 fails if it sends the right person to the wrong place.
@@ -197,21 +191,6 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <Reveal className="market-note">
-            <p>
-              <strong>One client per market.</strong> We work with a small
-              number of clients at a time, and never two who compete with each
-              other, so the strategy we build stays yours.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      <section id="faq">
-        <div className="wrap">
-          <div className="sec-eyebrow">Common questions</div>
-          <h2>The things everyone asks before they call.</h2>
-          <Faq />
         </div>
       </section>
 

@@ -3,11 +3,10 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-const LINKS = [
-  { href: '/#services', label: 'Services' },
-  { href: '/about', label: 'About' },
-  { href: '/pricing', label: 'Pricing' },
-];
+// Services, About, and Pricing are all hidden for now, leaving the CTA as the
+// only nav item. The About and Pricing pages still exist and resolve by URL;
+// nothing links to them.
+const LINKS: { href: string; label: string }[] = [];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -50,36 +49,42 @@ export default function Nav() {
           <Link href="/#consult" className="nav-cta">
             Free strategy session
           </Link>
-          <button
-            type="button"
-            className={`nav-toggle${open ? ' is-open' : ''}`}
-            aria-expanded={open}
-            aria-controls="nav-panel"
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span className="nav-toggle-bars" aria-hidden="true" />
-          </button>
+          {/* With no links to collapse, a hamburger would open to reveal only
+              the CTA. Mobile keeps the hero button and sticky bar instead. */}
+          {LINKS.length > 0 && (
+            <button
+              type="button"
+              className={`nav-toggle${open ? ' is-open' : ''}`}
+              aria-expanded={open}
+              aria-controls="nav-panel"
+              aria-label={open ? 'Close menu' : 'Open menu'}
+              onClick={() => setOpen((v) => !v)}
+            >
+              <span className="nav-toggle-bars" aria-hidden="true" />
+            </button>
+          )}
         </div>
       </div>
 
       {/* Mobile only. Desktop keeps the inline links above. */}
-      <div id="nav-panel" className={`nav-panel${open ? ' is-open' : ''}`}>
-        <div className="nav-panel-inner">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
-              {l.label}
+      {LINKS.length > 0 && (
+        <div id="nav-panel" className={`nav-panel${open ? ' is-open' : ''}`}>
+          <div className="nav-panel-inner">
+            {LINKS.map((l) => (
+              <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
+                {l.label}
+              </Link>
+            ))}
+            <Link
+              href="/#consult"
+              className="nav-panel-cta"
+              onClick={() => setOpen(false)}
+            >
+              Free strategy session →
             </Link>
-          ))}
-          <Link
-            href="/#consult"
-            className="nav-panel-cta"
-            onClick={() => setOpen(false)}
-          >
-            Free strategy session →
-          </Link>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
