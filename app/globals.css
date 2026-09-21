@@ -143,6 +143,10 @@ h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,40px);l
 
 /* ---- services ---- */
 .svc-grid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+/* "Is this you?" dropped to two cards when the third ("too small for the
+   big agencies") was removed; the shared 3-column grid stays as-is for
+   #services, which still has three. */
+.svc-grid--2{grid-template-columns:repeat(2,1fr)}
 @media(max-width:720px){.svc-grid{grid-template-columns:1fr}}
 .svc{background:var(--ink);padding:28px 26px;transition:background .2s}
 .svc:hover{background:var(--panel)}

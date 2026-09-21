@@ -43,12 +43,12 @@ const CASES: CaseFile[] = [
     id: 'contractor',
     tab: 'Contractor',
     vert: 'Contractor · West Covina, CA · Meta Ads',
-    value: 4.3,
+    value: 8,
     decimals: 1,
     suffix: 'x',
     metric: 'return on ad spend · 32 leads · $750 spend · 1 month (April 2026)',
     vs: '≈$23 cost per lead',
-    revenue: '≈$3,225 estimated revenue',
+    revenue: '+$6,000 estimated revenue',
   },
 ];
 

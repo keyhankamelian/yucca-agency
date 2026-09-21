@@ -55,14 +55,13 @@ export default function Home() {
             actually good at.
           </h1>
           <p className="hero-sub">
-            Paid social ads, funnel analysis, build, and optimization. For
-            service businesses. No long-term contracts, built to return
-            2&ndash;10x your ad spend.
+            Paid social ads, full customer acquisition funnel build and
+            optimization.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
-              Get a free strategy session →
+              Book your strategy session →
             </a>
           </div>
           <div className="partners">
@@ -84,8 +83,8 @@ export default function Home() {
       <section id="who-for">
         <div className="wrap">
           <div className="sec-eyebrow">Is this you?</div>
-          <h2>Most businesses come to us from one of three places.</h2>
-          <div className="svc-grid">
+          <h2>Most businesses come to us from one of two places.</h2>
+          <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
               <div className="ix">01</div>
               <h3>Never run paid social</h3>
@@ -100,14 +99,6 @@ export default function Home() {
               <p>
                 You ran the ads yourself, or let an AI tool run them, and the
                 leads never came or booked. We know why.
-              </p>
-            </Reveal>
-            <Reveal className="svc" delayMs={140}>
-              <div className="ix">03</div>
-              <h3>Too small for the big agencies</h3>
-              <p>
-                Most agencies won&apos;t return your call under a $5,000
-                monthly retainer. We will.
               </p>
             </Reveal>
           </div>
