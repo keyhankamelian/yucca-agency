@@ -47,7 +47,7 @@ export default function Nav() {
             </Link>
           ))}
           <Link href="/#consult" className="nav-cta">
-            Free strategy session
+            Apply to work with us
           </Link>
           {/* With no links to collapse, a hamburger would open to reveal only
               the CTA. Mobile keeps the hero button and sticky bar instead. */}
@@ -80,7 +80,7 @@ export default function Nav() {
               className="nav-panel-cta"
               onClick={() => setOpen(false)}
             >
-              Free strategy session →
+              Apply to work with us →
             </Link>
           </div>
         </div>

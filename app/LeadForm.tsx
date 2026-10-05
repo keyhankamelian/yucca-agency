@@ -25,10 +25,10 @@ export default function LeadForm() {
       <form id="leadForm">
         <div className="form-success" style={{ display: 'block' }}>
           <div className="check">✓</div>
-          <h3>Got it — talk soon.</h3>
+          <h3>Application received.</h3>
           <p>
-            Want to skip the back-and-forth? Pick a time that works for you
-            right now.
+            We&apos;ll check that your area is open and reply within one
+            business day. Want to skip ahead? Pick a time now.
           </p>
           <a
             href={CALENDLY_URL}
@@ -47,8 +47,8 @@ export default function LeadForm() {
             Pick my time →
           </a>
           <p className="form-fine">
-            Or sit tight, and we&apos;ll reach out within one business day to
-            schedule it for you.
+            Booking a call doesn&apos;t reserve a territory. We confirm
+            availability on the call.
           </p>
         </div>
       </form>
@@ -101,20 +101,26 @@ export default function LeadForm() {
           />
         </div>
         <div className="fld">
+          <label htmlFor="location">City or neighborhood</label>
+          <input
+            id="location"
+            name="location"
+            type="text"
+            placeholder="Where your business is based"
+            required
+          />
+        </div>
+        <div className="fld">
           <label htmlFor="type">Business type</label>
           <select id="type" name="business_type" defaultValue="" required>
             <option value="" disabled>
               Select one
             </option>
-            <option>Dental / orthodontics</option>
-            <option>Med spa / aesthetics</option>
-            <option>Chiropractic / wellness</option>
-            <option>Acupuncture</option>
-            <option>Law firm</option>
-            <option>Contractor / home services</option>
-            <option>Gym / fitness</option>
-            <option>Beauty / salon / spa</option>
-            <option>Coach / consultant</option>
+            <option>Kitchen / bathroom remodeling</option>
+            <option>General contractor</option>
+            <option>Roofing / exterior</option>
+            <option>HVAC / plumbing / electrical</option>
+            <option>Other home services</option>
             <option>Other</option>
           </select>
         </div>
@@ -123,11 +129,10 @@ export default function LeadForm() {
           className="btn btn-primary"
           disabled={state.submitting}
         >
-          Get my free strategy session →
+          Apply to work with us →
         </button>
         <p className="form-fine">
-          We&apos;ll reach out within one business day to schedule your
-          30-minute call.
+          We review every application and reply within one business day.
         </p>
         {state.errors && (
           <p className="form-error" id="formError" style={{ display: 'block' }}>

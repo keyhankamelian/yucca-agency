@@ -3,8 +3,11 @@ import RotatingAudience from './RotatingAudience';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
-import CaseFiles from './components/CaseFiles';
 import StickyCta from './components/StickyCta';
+
+// The territory rule the copy below commits to. The site promises it, so change
+// it here if the real policy changes.
+const TERRITORY_MILES = 100;
 
 export default function Home() {
   return (
@@ -48,20 +51,21 @@ export default function Home() {
         </div>
         <div className="wrap">
           <div className="eyebrow">
-            Paid social ads · Lead generation · Revenue &amp; social growth
+            Paid social ads · Direct mail · Home service growth
           </div>
           <h1>
             We fill your <em>calendar</em>. You do the work you&apos;re
             actually good at.
           </h1>
           <p className="hero-sub">
-            Paid social ads, full customer acquisition funnel build and
-            optimization.
+            Paid social ads, direct mail to local homeowners, a funnel built
+            to convert, and follow-up on every lead. Built for home service
+            companies, especially kitchen and bathroom remodelers.
           </p>
           <RotatingAudience />
           <div className="hero-actions">
             <a href="#consult" className="btn btn-primary">
-              Book your strategy session →
+              Apply to work with us →
             </a>
           </div>
           <div className="partners">
@@ -77,28 +81,73 @@ export default function Home() {
               className="partner-logo partner-logo--meta"
             />
           </div>
+
+          <div className="stats">
+            <div className="stat">
+              <div className="stat-n">4-Part</div>
+              <div className="stat-l">
+                One system: ads, mail, funnel, and follow-up.
+              </div>
+            </div>
+            <div className="stat">
+              <div className="stat-n">1 per market</div>
+              <div className="stat-l">
+                We don&apos;t work with two competing businesses in the same
+                category and area.
+              </div>
+            </div>
+            <div className="stat">
+              <div className="stat-n">0</div>
+              <div className="stat-l">
+                Long-term contracts. Everything is month to month.
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
-      <section id="who-for">
+      <section id="problem">
         <div className="wrap">
-          <div className="sec-eyebrow">Is this you?</div>
-          <h2>Most businesses come to us from one of two places.</h2>
+          <div className="sec-eyebrow">The problem</div>
+          <h2>Where most campaigns quietly fall apart.</h2>
+          <p className="sec-lede">
+            The ad is rarely the only problem. Most estimates and consultations
+            are lost somewhere between the click and the calendar.
+          </p>
           <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
               <div className="ix">01</div>
-              <h3>Never run paid social</h3>
+              <h3>The ads bring clicks, not appointments.</h3>
               <p>
-                You know it works for businesses like yours. You just
-                haven&apos;t had someone set it up right yet.
+                Boosted posts and generic campaigns optimize for cheap
+                engagement. The people who respond to those aren&apos;t the
+                people who book.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={70}>
               <div className="ix">02</div>
-              <h3>Tried it, or tried AI, alone</h3>
+              <h3>The page doesn&apos;t match the promise.</h3>
               <p>
-                You ran the ads yourself, or let an AI tool run them, and the
-                leads never came or booked. We know why.
+                Someone taps an ad about one thing and lands on a page about
+                everything. The ad, the offer, and the page have to say the
+                same thing.
+              </p>
+            </Reveal>
+            <Reveal className="svc" delayMs={140}>
+              <div className="ix">03</div>
+              <h3>Leads go cold before anyone replies.</h3>
+              <p>
+                Someone who filled out a form a few hours ago has often
+                already contacted another business. Speed is a big part of who
+                gets the appointment.
+              </p>
+            </Reveal>
+            <Reveal className="svc" delayMs={210}>
+              <div className="ix">04</div>
+              <h3>Nobody follows up after the first no.</h3>
+              <p>
+                Plenty of appointments come from the third or fourth touch,
+                and most businesses never make one.
               </p>
             </Reveal>
           </div>
@@ -108,80 +157,193 @@ export default function Home() {
       <section id="services">
         <div className="wrap">
           <div className="sec-eyebrow">How it works</div>
-          <h2>An agency that does the heavy lifting.</h2>
+          <h2>Four parts. One job: booked appointments.</h2>
           <p className="sec-lede">
             We handle the strategy, the creative direction, the editing, the
-            launch, and the day-to-day management. Expect a couple of hours of
-            your time in month one, and less after that. Don&apos;t want to be
-            on camera? We can shoot it for you.
+            launch, and the day-to-day. Expect a couple of hours of your time
+            in month one, and less after that. Don&apos;t want to be on
+            camera? We can shoot it for you.
           </p>
-          <div className="svc-grid">
+          <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
               <div className="ix">01</div>
-              <h3>We tell you what to film</h3>
+              <h3>Paid social ads</h3>
               <p>
-                No crew, no studio, no script to memorize. Your phone and a
-                window are enough. We send you the exact shot list.
+                We tell you exactly what to film, edit it into ads, launch
+                them on Meta and Instagram, and manage the spend day to day.
+                Built around the cost of a qualified lead, not reach.
               </p>
+              <ul>
+                <li>Creative direction and a shot list</li>
+                <li>Editing, launch, and daily management</li>
+                <li>Weekly reporting in plain language</li>
+              </ul>
             </Reveal>
             <Reveal className="svc" delayMs={60}>
               <div className="ix">02</div>
-              <h3>We edit, launch, and manage</h3>
+              <h3>Funnel build and optimization</h3>
               <p>
-                Send us the footage. We cut it into ads, run them on Meta,
-                Instagram, or TikTok, and manage the spend day to day.
+                We audit the page your ad points to, the offer on it, and how
+                conversions are tracked. If something is broken or missing, we
+                fix it or build it.
               </p>
+              <ul>
+                <li>Funnel and offer audit</li>
+                <li>Landing page build or optimization</li>
+                <li>Conversion tracking set up properly</li>
+              </ul>
             </Reveal>
             <Reveal className="svc" delayMs={120}>
               <div className="ix">03</div>
-              <h3>We audit and optimize everything the ad touches</h3>
+              <h3>Direct mail to local homeowners</h3>
               <p>
-                Your page, your offer, your follow-up. Great targeting still
-                fails if it sends the right person to the wrong place.
+                When we close a job for you, we mail the homes around it. Your
+                neighbors see the finished work, with the same offer as your
+                ads, so the mailer and the online ad reinforce each other.
               </p>
+              <ul>
+                <li>Mailers sent to every nearby home of a closed job</li>
+                <li>Design and offer matched to your ads</li>
+                <li>We handle the printing and postage</li>
+              </ul>
+            </Reveal>
+            <Reveal className="svc" delayMs={180}>
+              <div className="ix">04</div>
+              <h3>Follow-up on every lead</h3>
+              <p>
+                Every new lead gets an immediate text from us, then follow-up
+                until they book or give a clear no. You also get our
+                Lead-to-Client playbook for the calls your team takes.
+              </p>
+              <ul>
+                <li>An immediate text to every new lead</li>
+                <li>Follow-up until a clear yes or no</li>
+                <li>Scripts, templates, and a no-show checklist</li>
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section id="standard">
+        <div className="wrap">
+          <div className="sec-eyebrow">Our standard</div>
+          <h2>Measured in booked appointments, not impressions.</h2>
+          <p className="sec-lede">
+            Every campaign is judged on one number: what it costs to get a
+            qualified lead onto your calendar. That number is at the top of
+            every weekly report.
+          </p>
+          <div className="commit">
+            <Reveal className="commit-item">
+              Weekly reporting in plain language.
+            </Reveal>
+            <Reveal className="commit-item" delayMs={60}>
+              No long-term contracts. Month to month.
+            </Reveal>
+            <Reveal className="commit-item" delayMs={120}>
+              Your ad account stays in your name, and you keep everything we
+              build.
+            </Reveal>
+            <Reveal className="commit-item" delayMs={180}>
+              You approve every ad before it runs.
             </Reveal>
           </div>
 
           <Reveal className="highlight">
             <div className="highlight-copy">
-              <div className="highlight-label">What the audit covers</div>
+              <div className="highlight-label">Territory</div>
               <div className="highlight-name">
-                Where campaigns actually break
+                One business per category, per market.
               </div>
               <p className="highlight-desc">
-                The page your ad points to. The offer sitting on it. How fast
-                you reply when a lead comes in. Whether any of it is being
-                tracked at all. We check all four before we touch your budget,
-                and tell you what we find either way. If something needs
-                building or fixing, we can do that too.
+                We don&apos;t run this system for two competing businesses in
+                the same category within {TERRITORY_MILES} miles of each
+                other. When you take your territory, the creative, the
+                targeting, and the offer are yours. Apply to see whether your
+                area is still open.
               </p>
             </div>
           </Reveal>
+        </div>
+      </section>
 
-          {/* Signature element: three real results across three industries */}
-          <div style={{ marginTop: '58px' }}>
-            <div className="sec-eyebrow">Case files</div>
-            <h2>Featured case studies from real campaigns.</h2>
+      <section id="fit">
+        <div className="wrap">
+          <div className="sec-eyebrow">Is this for you?</div>
+          <h2>Who this works for, and who it doesn&apos;t.</h2>
+          <div className="fit">
+            <Reveal className="fit-col fit-yes">
+              <h3>This works for businesses that</h3>
+              <ul>
+                <li>
+                  Sell high-ticket home projects, like kitchen and bathroom
+                  remodeling, and book estimates or in-home consultations.
+                </li>
+                <li>Compete on quality and craftsmanship, not the lowest bid.</li>
+                <li>
+                  Want qualified people on the calendar, not a spreadsheet of
+                  raw leads.
+                </li>
+                <li>
+                  Want steady monthly growth instead of feast-or-famine
+                  months.
+                </li>
+              </ul>
+            </Reveal>
+            <Reveal className="fit-col fit-no" delayMs={80}>
+              <h3>This isn&apos;t for you if</h3>
+              <ul>
+                <li>You compete mainly on being the cheapest option.</li>
+                <li>You need results this week.</li>
+                <li>
+                  You&apos;re not ready to take on more jobs than you handle
+                  today.
+                </li>
+                <li>
+                  You can&apos;t approve ads or respond to handed-off leads
+                  within a day or two.
+                </li>
+              </ul>
+            </Reveal>
           </div>
-          <div style={{ marginTop: '24px' }}>
-            <CaseFiles />
-          </div>
+        </div>
+      </section>
 
-          <Reveal className="highlight">
-            <div className="highlight-copy">
-              <div className="highlight-label">
-                Included with every plan — free
-              </div>
-              <div className="highlight-name">The Lead-to-Client System</div>
-              <p className="highlight-desc">
-                Getting the lead is half the job. Our 5-step playbook covers
-                the other half: call scripts, follow-up templates, objection
-                handlers, and a no-show prevention checklist. Sent to you free
-                once you sign on, no matter the plan.
+      <section id="changes">
+        <div className="wrap">
+          <div className="sec-eyebrow">What changes</div>
+          <h2>What you notice once it&apos;s running.</h2>
+          <div className="svc-grid svc-grid--2">
+            <Reveal className="svc">
+              <h3>Better-qualified leads</h3>
+              <p>
+                Homeowners who raised their hand for your specific offer, not
+                people hunting for the lowest bid.
               </p>
-            </div>
-          </Reveal>
-
+            </Reveal>
+            <Reveal className="svc" delayMs={70}>
+              <h3>More booked appointments</h3>
+              <p>
+                Qualified homeowners on your calendar, ready to talk about a
+                real project.
+              </p>
+            </Reveal>
+            <Reveal className="svc" delayMs={140}>
+              <h3>Faster follow-up</h3>
+              <p>
+                Every new lead hears from you right away, not hours later and
+                not after they&apos;ve called another contractor.
+              </p>
+            </Reveal>
+            <Reveal className="svc" delayMs={210}>
+              <h3>Numbers you can read</h3>
+              <p>
+                A weekly report in plain language: what it cost to get a
+                qualified lead, and what changed since last week.
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -204,29 +366,30 @@ export default function Home() {
       <section className="cta-sec" id="consult">
         <div className="wrap cta-grid">
           <div className="cta-left">
-            <div className="sec-eyebrow">Free strategy session</div>
-            <h2>A quick call. A real plan.</h2>
+            <div className="sec-eyebrow">Apply</div>
+            <h2>Check whether your area is open.</h2>
+            <p className="sec-lede">
+              We take one business per category in a market. Tell us what you
+              do and where, and we&apos;ll tell you whether your area is still
+              available.
+            </p>
             <div className="cta-points">
               <Reveal className="cta-point">
                 <span className="k">[01]</span>
                 <span>
-                  We show you how much more revenue your ad investment could
-                  generate, and what it takes to dominate your market.
+                  We check your territory and look at your current marketing.
                 </span>
               </Reveal>
               <Reveal className="cta-point" delayMs={80}>
                 <span className="k">[02]</span>
                 <span>
-                  We analyze your brand, offer, and current marketing to show
-                  you exactly what&apos;s working and what&apos;s not.
+                  If it&apos;s open and a fit, we map out the plan and model
+                  your numbers before you spend a dollar.
                 </span>
               </Reveal>
               <Reveal className="cta-point" delayMs={160}>
                 <span className="k">[03]</span>
-                <span>
-                  If we&apos;re a fit, we&apos;ll map out the changes to make
-                  and model your numbers before you spend a dollar.
-                </span>
+                <span>If it isn&apos;t a fit, we&apos;ll tell you that too.</span>
               </Reveal>
             </div>
           </div>

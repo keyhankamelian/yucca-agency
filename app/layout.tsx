@@ -16,7 +16,7 @@ const siteUrl =
 
 const title = 'Yucca Agency - Digital Marketing';
 const description =
-  'Paid social ads for service businesses: dentists, med spas, chiropractors, fitness studios, coaches, and lawyers. LA-based, no long-term contracts. Book a free strategy session.';
+  'Paid social ads, direct mail, and follow-up for home service companies, especially kitchen and bathroom remodelers. LA-based, no long-term contracts. Apply to work with us.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

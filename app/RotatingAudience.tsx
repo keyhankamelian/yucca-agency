@@ -2,17 +2,14 @@
 
 import { useEffect, useState } from 'react';
 
-// The niche: service businesses. Every vertical here sells time slots on a
-// calendar, which is what "We fill your calendar" promises.
+// The niche: home service companies, led by kitchen and bathroom remodelers.
 const WORDS = [
-  'dentists',
-  'med spas',
-  'chiropractors',
-  'acupuncturists',
-  'fitness studios',
-  'coaches',
-  'beauty salons',
-  'lawyers',
+  'kitchen remodelers',
+  'bathroom remodelers',
+  'general contractors',
+  'roofers',
+  'HVAC companies',
+  'painters',
 ];
 
 const TYPE_MS = 45;

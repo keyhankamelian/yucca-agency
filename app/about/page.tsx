@@ -31,10 +31,10 @@ export default function About() {
               revenue.
             </p>
             <p className="about-text">
-              Today Yucca works with service businesses: dentists,
-              med spas, chiropractors, acupuncturists, fitness studios,
-              coaches, salons, and law firms. They all sell the same thing, a
-              slot on a calendar, which means the same playbook gets sharper
+              Today Yucca works with home service companies, especially
+              kitchen and bathroom remodelers. They all sell the same thing, a
+              high-ticket project that starts with an estimate, which means the
+              same playbook gets sharper
               with every client we run it for.
             </p>
             <p className="about-text">
