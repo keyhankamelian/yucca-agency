@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         <div className="wrap legal">
           <div className="sec-eyebrow">Legal</div>
           <h1 className="legal-title">Privacy Policy</h1>
-          <p className="legal-updated">Last updated: July 16, 2026</p>
+          <p className="legal-updated">Last updated: October 5, 2026</p>
 
           <p>
             This policy explains what information Yucca Agency
@@ -43,22 +43,41 @@ export default function PrivacyPolicy() {
             with your Meta/Instagram account for that purpose.
           </p>
 
+          <p>
+            If you use the chat widget on our site, we collect what you type
+            into it, plus your name, email, or mobile number if you share
+            them there.
+          </p>
+
           <h2>How we use your information</h2>
           <p>
             Form submissions are used to respond to your consultation
             request, understand your business before we talk, and follow
-            up by phone or email. Pixel data is used to measure and improve
+            up by phone, text message, or email. Pixel data is used to measure and improve
             our own advertising — it does not change anything about the
             service we provide you. We do not sell your information to
             third parties.
+          </p>
+
+          <h2>Text messages</h2>
+          <p>
+            If you give us your mobile number and agree to be contacted, or
+            you chat with us, we may text you about your inquiry and
+            scheduling. Message frequency varies, and message and data rates
+            may apply. Reply STOP to opt out at any time, or HELP for help.
+            We do not share mobile numbers or text-messaging opt-in data
+            with third parties or affiliates for their marketing or
+            promotional purposes. See also our{' '}
+            <a href="/terms">Terms of Service</a>.
           </p>
 
           <h2>Third-party services</h2>
           <p>
             This site relies on a small number of outside services to
             operate: Formspree processes and delivers form submissions to
-            us; Vercel hosts the site; Meta provides the pixel described
-            above. Each of these providers processes data under its own
+            us; LeadConnector provides the chat widget and our messaging;
+            Calendly handles call booking; Vercel hosts the site; Meta
+            provides the pixel described above. Each of these providers processes data under its own
             privacy policy in addition to this one.
           </p>
 

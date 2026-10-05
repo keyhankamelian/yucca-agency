@@ -48,6 +48,8 @@ export default function Footer() {
         </p>
         <p className="foot-legal">
           <a href="/privacy">Privacy Policy</a>
+          {' · '}
+          <a href="/terms">Terms of Service</a>
         </p>
       </div>
     </footer>

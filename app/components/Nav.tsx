@@ -43,14 +43,21 @@ export default function Nav() {
           Yucca
         </Link>
         <div className="nav-links">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href}>
-              {l.label}
-            </Link>
-          ))}
-          <Link href="/contact" className="nav-cta">
+          {LINKS.map((l) =>
+            l.href === '/contact' ? (
+              <a key={l.href} href={l.href}>
+                {l.label}
+              </a>
+            ) : (
+              <Link key={l.href} href={l.href}>
+                {l.label}
+              </Link>
+            )
+          )}
+          {/* Plain <a>: a full page load keeps the chat widget off /contact. */}
+          <a href="/contact" className="nav-cta">
             Apply to work with us
-          </Link>
+          </a>
           {LINKS.length > 0 && (
             <button
               type="button"
@@ -70,18 +77,20 @@ export default function Nav() {
       {LINKS.length > 0 && (
         <div id="nav-panel" className={`nav-panel${open ? ' is-open' : ''}`}>
           <div className="nav-panel-inner">
-            {LINKS.map((l) => (
-              <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
-                {l.label}
-              </Link>
-            ))}
-            <Link
-              href="/contact"
-              className="nav-panel-cta"
-              onClick={() => setOpen(false)}
-            >
+            {LINKS.map((l) =>
+              l.href === '/contact' ? (
+                <a key={l.href} href={l.href}>
+                  {l.label}
+                </a>
+              ) : (
+                <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
+                  {l.label}
+                </Link>
+              )
+            )}
+            <a href="/contact" className="nav-panel-cta">
               Apply to work with us →
-            </Link>
+            </a>
           </div>
         </div>
       )}

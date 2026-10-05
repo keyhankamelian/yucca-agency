@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import ChatWidget from './components/ChatWidget';
 import PageTransition from './components/PageTransition';
 import './globals.css';
 
@@ -82,15 +83,7 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-        {/* LeadConnector chat widget */}
-        <Script
-          id="leadconnector-chat"
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6ac4122920b336636f16a7c9"
-          data-source="WEB_USER"
-          strategy="afterInteractive"
-        />
+        <ChatWidget />
         <noscript>
           <img
             height="1"
