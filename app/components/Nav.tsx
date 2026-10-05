@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-// Pricing stays hidden. It still resolves by URL, but nothing links to it.
 const LINKS: { href: string; label: string }[] = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
