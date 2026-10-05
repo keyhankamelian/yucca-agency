@@ -59,8 +59,8 @@ export default function StickyCta() {
 
   return (
     <div className={`sticky-cta${visible ? ' is-visible' : ''}`} aria-hidden={!visible}>
-      {/* Root-relative so it resolves from /about and /pricing too. */}
-      <a href="/#consult" className="btn btn-primary" tabIndex={visible ? 0 : -1}>
+      {/* Root-relative so it resolves from every page. */}
+      <a href="/contact" className="btn btn-primary" tabIndex={visible ? 0 : -1}>
         Apply to work with us →
       </a>
     </div>

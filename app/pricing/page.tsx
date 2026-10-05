@@ -64,7 +64,7 @@ export default function Pricing() {
                   <span className="waived">waived through August 31</span>
                 </li>
               </ul>
-              <a href="/#consult" className="btn btn-ghost">
+              <a href="/contact" className="btn btn-ghost">
                 Start here
               </a>
             </Reveal>
@@ -92,7 +92,7 @@ export default function Pricing() {
                   <span className="waived">waived through August 31</span>
                 </li>
               </ul>
-              <a href="/#consult" className="btn btn-ghost">
+              <a href="/contact" className="btn btn-ghost">
                 Book my free strategy session
               </a>
             </Reveal>
@@ -119,7 +119,7 @@ export default function Pricing() {
                   <span className="waived">waived through August 31</span>
                 </li>
               </ul>
-              <a href="/#consult" className="btn btn-ghost">
+              <a href="/contact" className="btn btn-ghost">
                 Talk to us
               </a>
             </Reveal>

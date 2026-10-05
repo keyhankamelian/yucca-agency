@@ -1,5 +1,3 @@
-import LeadForm from './LeadForm';
-import RotatingAudience from './RotatingAudience';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
@@ -51,20 +49,19 @@ export default function Home() {
         </div>
         <div className="wrap">
           <div className="eyebrow">
-            Paid social ads · Direct mail · Home service growth
+            Done-for-you growth for home service companies
           </div>
           <h1>
-            We fill your <em>calendar</em>. You do the work you&apos;re
-            actually good at.
+            We bring the leads and book the estimates.{' '}
+            <em>You make zero phone calls.</em>
           </h1>
           <p className="hero-sub">
-            Paid social ads, direct mail to local homeowners, a funnel built
-            to convert, and follow-up on every lead. Built for home service
-            companies, especially kitchen and bathroom remodelers.
+            A complete growth system for kitchen and bathroom remodelers. We
+            generate the leads, reach out to every one, and put the estimates
+            on your calendar.
           </p>
-          <RotatingAudience />
           <div className="hero-actions">
-            <a href="#consult" className="btn btn-primary">
+            <a href="/contact" className="btn btn-primary">
               Apply to work with us →
             </a>
           </div>
@@ -363,39 +360,18 @@ export default function Home() {
         <span className="rule"></span>
       </div>
 
-      <section className="cta-sec" id="consult">
-        <div className="wrap cta-grid">
-          <div className="cta-left">
-            <div className="sec-eyebrow">Apply</div>
-            <h2>Check whether your area is open.</h2>
-            <p className="sec-lede">
-              We take one business per category in a market. Tell us what you
-              do and where, and we&apos;ll tell you whether your area is still
-              available.
-            </p>
-            <div className="cta-points">
-              <Reveal className="cta-point">
-                <span className="k">[01]</span>
-                <span>
-                  We check your territory and look at your current marketing.
-                </span>
-              </Reveal>
-              <Reveal className="cta-point" delayMs={80}>
-                <span className="k">[02]</span>
-                <span>
-                  If it&apos;s open and a fit, we map out the plan and model
-                  your numbers before you spend a dollar.
-                </span>
-              </Reveal>
-              <Reveal className="cta-point" delayMs={160}>
-                <span className="k">[03]</span>
-                <span>If it isn&apos;t a fit, we&apos;ll tell you that too.</span>
-              </Reveal>
-            </div>
-          </div>
-
-          {/* Formspree endpoint — handled via @formspree/react (form ID xkolqpnb) */}
-          <LeadForm />
+      <section className="cta-sec">
+        <div className="wrap final-cta">
+          <div className="sec-eyebrow">Apply</div>
+          <h2>Check whether your territory is open.</h2>
+          <p className="sec-lede">
+            We take one company per trade in a market. Tell us what you do and
+            where, and we&apos;ll tell you whether your area is still
+            available.
+          </p>
+          <a href="/contact" className="btn btn-primary">
+            Check if your territory is available →
+          </a>
         </div>
       </section>
 

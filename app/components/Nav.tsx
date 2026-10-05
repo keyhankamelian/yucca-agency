@@ -3,10 +3,12 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-// Services, About, and Pricing are all hidden for now, leaving the CTA as the
-// only nav item. The About and Pricing pages still exist and resolve by URL;
-// nothing links to them.
-const LINKS: { href: string; label: string }[] = [];
+// Pricing stays hidden. It still resolves by URL, but nothing links to it.
+const LINKS: { href: string; label: string }[] = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -46,11 +48,9 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
-          <Link href="/#consult" className="nav-cta">
+          <Link href="/contact" className="nav-cta">
             Apply to work with us
           </Link>
-          {/* With no links to collapse, a hamburger would open to reveal only
-              the CTA. Mobile keeps the hero button and sticky bar instead. */}
           {LINKS.length > 0 && (
             <button
               type="button"
@@ -76,7 +76,7 @@ export default function Nav() {
               </Link>
             ))}
             <Link
-              href="/#consult"
+              href="/contact"
               className="nav-panel-cta"
               onClick={() => setOpen(false)}
             >
