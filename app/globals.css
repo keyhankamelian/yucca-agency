@@ -442,3 +442,6 @@ header .wrap, section .wrap{position:relative;z-index:1}
 .about-prose{max-width:60ch;margin-top:8px}
 .about-prose .about-text:first-child{margin-top:20px}
 .fit--one{grid-template-columns:1fr}
+.foot-phone{margin-bottom:6px}
+.foot-phone a{color:var(--paper-dim);text-decoration:none;font-size:15px;font-weight:500}
+.foot-phone a:hover{color:var(--accent-deep)}
