@@ -28,6 +28,22 @@ export default function Contact() {
               we&apos;re a fit.
             </p>
 
+            <div className="contact-direct">
+              <div className="sec-eyebrow">Prefer to reach us directly?</div>
+              <ul>
+                <li>
+                  <span>Phone</span>
+                  <a href="tel:+14247227052">(424) 722-7052</a>
+                </li>
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:hello@yuccaagency.com">
+                    hello@yuccaagency.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+
             <div className="highlight">
               <div className="highlight-copy">
                 <div className="highlight-label">Before you apply</div>

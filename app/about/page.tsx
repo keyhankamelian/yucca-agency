@@ -21,6 +21,20 @@ export default function About() {
           <h1 className="page-h1">
             Most agencies hand you leads. We hand you booked estimates.
           </h1>
+          <div className="about-prose">
+            <p className="about-text">
+              At Yucca, we run paid social ads, direct mail, landing pages,
+              and lead follow-up for home service companies, especially
+              kitchen and bathroom remodelers. We bring six years of
+              experience running paid ad campaigns for small and medium-sized
+              businesses: managing budgets, writing creative, optimizing
+              funnels, and turning ad spend into measurable revenue.
+            </p>
+            <p className="about-text">
+              We work with a small number of clients at a time, one per
+              market, so the strategy we build stays yours.
+            </p>
+          </div>
           <p className="sec-lede">
             Anyone can spend your money on ads and forward you a list of names.
             We built a system that reaches out to each lead right away, gets
@@ -150,28 +164,6 @@ export default function About() {
               </ul>
             </Reveal>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="wrap about-grid">
-          <Reveal className="about-photo">
-            <img src="/founder.jpg" alt="Keyhan, founder of Yucca Agency" />
-          </Reveal>
-          <Reveal className="about-copy" delayMs={90}>
-            <div className="sec-eyebrow">The founder</div>
-            <h2>Hi, I&apos;m Keyhan.</h2>
-            <p className="about-text">
-              I&apos;m the founder of Yucca Agency. I&apos;ve spent six years
-              running paid ad campaigns for small and medium-sized
-              businesses: managing budgets, writing creative, optimizing
-              funnels, and turning ad spend into measurable revenue.
-            </p>
-            <p className="about-text">
-              We work with a small number of clients at a time, one per
-              market, so the strategy we build stays yours.
-            </p>
-          </Reveal>
         </div>
       </section>
 
