@@ -43,7 +43,7 @@ export default function Footer() {
           <a href="tel:+14247227052">(424) 722-7052</a>
         </p>
         <p>
-          Yucca Agency · Digital marketing · Los Angeles, CA · © 2026 · All
+          Yucca Agency · Los Angeles, CA · © 2026 · All
           rights reserved
         </p>
         <p className="foot-legal">
