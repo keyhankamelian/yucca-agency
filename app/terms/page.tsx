@@ -94,7 +94,7 @@ export default function Terms() {
           <p>
             Questions about these terms:{' '}
             <a href="mailto:hello@yuccaagency.com">hello@yuccaagency.com</a>
-            {' '}or <a href="tel:+14247227052">(424) 722-7052</a>.
+            {' '}or <a href="tel:+13106947875">(310) 694-7875</a>.
           </p>
         </div>
       </section>

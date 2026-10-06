@@ -33,7 +33,7 @@ export default function Contact() {
               <ul>
                 <li>
                   <span>Phone</span>
-                  <a href="tel:+14247227052">(424) 722-7052</a>
+                  <a href="tel:+13106947875">(310) 694-7875</a>
                 </li>
                 <li>
                   <span>Email</span>

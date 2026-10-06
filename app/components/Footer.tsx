@@ -40,7 +40,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="foot-phone">
-          <a href="tel:+14247227052">(424) 722-7052</a>
+          <a href="tel:+13106947875">(310) 694-7875</a>
         </p>
         <p>
           Yucca Agency · Los Angeles, CA · © 2026 · All
