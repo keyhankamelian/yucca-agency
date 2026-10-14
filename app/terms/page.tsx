@@ -20,8 +20,7 @@ export default function Terms() {
           <p>
             These terms govern your use of yuccaagency.com and any
             communication with Yucca Agency (&quot;Yucca,&quot;
-            &quot;we,&quot; &quot;us&quot;), including our chat widget and
-            text messages. By using the site or messaging us, you agree to
+            &quot;we,&quot; &quot;us&quot;), including text messages. By using the site or messaging us, you agree to
             them.
           </p>
 
@@ -38,14 +37,14 @@ export default function Terms() {
           <h2>Information you give us</h2>
           <p>
             Please give us accurate information when you submit the
-            application form or chat with us. How we handle it is described
+            application form or contact us. How we handle it is described
             in our <a href="/privacy">Privacy Policy</a>.
           </p>
 
           <h2>Text messaging</h2>
           <p>
-            If you start a chat with us or share your mobile number and
-            agree to be contacted, we may text you about your inquiry,
+            If you share your mobile number and agree to be
+            contacted, we may text you about your inquiry,
             scheduling, and follow-up. Message frequency varies. Message and
             data rates may apply. Reply STOP at any time to stop receiving
             texts, or HELP for help. Consent to receive texts is not a

@@ -43,11 +43,6 @@ export default function PrivacyPolicy() {
             with your Meta/Instagram account for that purpose.
           </p>
 
-          <p>
-            If you use the chat widget on our site, we collect what you type
-            into it, plus your name, email, or mobile number if you share
-            them there.
-          </p>
 
           <h2>How we use your information</h2>
           <p>
@@ -61,8 +56,7 @@ export default function PrivacyPolicy() {
 
           <h2>Text messages</h2>
           <p>
-            If you give us your mobile number and agree to be contacted, or
-            you chat with us, we may text you about your inquiry and
+            If you give us your mobile number and agree to be contacted, we may text you about your inquiry and
             scheduling. Message frequency varies, and message and data rates
             may apply. Reply STOP to opt out at any time, or HELP for help.
             We do not share mobile numbers or text-messaging opt-in data
@@ -75,7 +69,7 @@ export default function PrivacyPolicy() {
           <p>
             This site relies on a small number of outside services to
             operate: Formspree processes and delivers form submissions to
-            us; LeadConnector provides the chat widget and our messaging;
+            us; LeadConnector provides our messaging;
             Calendly handles call booking; Vercel hosts the site; Meta
             provides the pixel described above. Each of these providers processes data under its own
             privacy policy in addition to this one.

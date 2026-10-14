@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import ChatWidget from './components/ChatWidget';
 import PageTransition from './components/PageTransition';
 import './globals.css';
 
@@ -83,7 +82,6 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-        <ChatWidget />
         <noscript>
           <img
             height="1"

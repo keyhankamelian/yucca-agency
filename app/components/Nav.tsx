@@ -53,7 +53,6 @@ export default function Nav() {
               </Link>
             )
           )}
-          {/* Plain <a>: a full page load keeps the chat widget off /contact. */}
           <a href="/contact" className="nav-cta">
             Apply to work with us
           </a>
