@@ -82,9 +82,10 @@ export default function Home() {
 
           <div className="stats">
             <div className="stat">
-              <div className="stat-n">4-Part</div>
+              <div className="stat-n">$60k</div>
               <div className="stat-l">
-                One system: ads, mail, funnel, and follow-up.
+                In signed jobs for a bathroom remodeler in 30 days, from
+                $1,750 in ad spend.
               </div>
             </div>
             <div className="stat">
