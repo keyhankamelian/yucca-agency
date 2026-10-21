@@ -52,8 +52,8 @@ export default function Home() {
             Done-for-you growth for home service companies
           </div>
           <h1>
-            We bring the leads and book the estimates.{' '}
-            <em>You make zero phone calls.</em>
+            Qualified estimates on your calendar.{' '}
+            <em>Without a single phone call.</em>
           </h1>
           <p className="hero-sub">
             A complete growth system for kitchen and bathroom remodelers. We
