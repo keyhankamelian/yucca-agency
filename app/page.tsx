@@ -222,6 +222,40 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="results">
+        <div className="wrap">
+          <div className="sec-eyebrow">Case study</div>
+          <h2>$60,000 in signed jobs from $1,750 in ad spend.</h2>
+          <p className="sec-lede">
+            A bathroom remodeling contractor near Downtown LA wanted qualified
+            homeowners booking consultations, not a list of cheap leads. Here
+            is what the first 30 days looked like.
+          </p>
+          <div className="stats stats--4">
+            <div className="stat">
+              <div className="stat-n">30</div>
+              <div className="stat-l">Leads in 30 days, at $58 each.</div>
+            </div>
+            <div className="stat">
+              <div className="stat-n">10</div>
+              <div className="stat-l">Consultations booked, at $175 each.</div>
+            </div>
+            <div className="stat">
+              <div className="stat-n">3</div>
+              <div className="stat-l">Jobs signed, averaging about $20,000.</div>
+            </div>
+            <div className="stat">
+              <div className="stat-n">34x</div>
+              <div className="stat-l">Return on $1,750 in ad spend.</div>
+            </div>
+          </div>
+          <p className="case-note">
+            Client name withheld for privacy. Results vary by business and
+            market.
+          </p>
+        </div>
+      </section>
+
       <section id="standard">
         <div className="wrap">
           <div className="sec-eyebrow">Our standard</div>
