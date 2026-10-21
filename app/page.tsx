@@ -57,8 +57,9 @@ export default function Home() {
           </h1>
           <p className="hero-sub">
             A complete growth system for kitchen and bathroom remodelers. We
-            generate the leads, reach out to every one, and put the estimates
-            on your calendar.
+            create and run your ad campaigns, call and qualify every lead, and
+            book qualified homeowners as estimate appointments directly on
+            your calendar.
           </p>
           <div className="hero-actions">
             <a href="/contact" className="btn btn-primary">
