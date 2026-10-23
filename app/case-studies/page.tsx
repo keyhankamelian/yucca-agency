@@ -168,8 +168,9 @@ export default function CaseStudies() {
           <div className="sec-eyebrow">Your market</div>
           <h2>Want results like these in your area?</h2>
           <p className="sec-lede">
-            We work with one remodeler per market. Apply to see whether your
-            territory is still open.
+            We work with one remodeler per market, because we don&apos;t want
+            to compete against ourselves. Apply to see whether your territory
+            is still open.
           </p>
           <a href="/contact" className="btn btn-primary">
             Check if your territory is available →

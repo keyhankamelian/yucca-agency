@@ -376,9 +376,9 @@ export default function Home() {
           <div className="sec-eyebrow">Apply</div>
           <h2>Check whether your territory is open.</h2>
           <p className="sec-lede">
-            We take one company per trade in a market. Tell us what you do and
-            where, and we&apos;ll tell you whether your area is still
-            available.
+            We work with one remodeler per market, because we don&apos;t want
+            to compete against ourselves. Tell us what you do and where, and
+            we&apos;ll tell you whether your area is still available.
           </p>
           <a href="/contact" className="btn btn-primary">
             Check if your territory is available →
