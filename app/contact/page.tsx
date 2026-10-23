@@ -3,6 +3,8 @@ import LeadForm from '../LeadForm';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Reveal from '../components/Reveal';
+import PageHero from '../components/PageHero';
+import SidePlant from '../components/SidePlant';
 import StickyCta from '../components/StickyCta';
 
 export const metadata: Metadata = {
@@ -16,18 +18,21 @@ export default function Contact() {
     <>
       <Nav />
 
-      <section className="cta-sec" id="consult">
+      <PageHero
+        eyebrow="Territory application"
+        title="Check whether your territory is still open."
+      >
+        <p className="hero-sub">
+          We never run the same system for two competing companies in the same
+          trade and area. Tell us about your business below, and we&apos;ll let
+          you know whether your market is open and whether we&apos;re a fit.
+        </p>
+      </PageHero>
+
+      <section className="cta-sec contact-sec" id="consult">
+        <SidePlant plant="twin" side="left" />
         <div className="wrap cta-grid">
           <div className="cta-left">
-            <div className="sec-eyebrow">Territory application</div>
-            <h2>Check whether your territory is still open.</h2>
-            <p className="sec-lede">
-              We never run the same system for two competing companies in the
-              same trade and area. Tell us about your business below, and
-              we&apos;ll let you know whether your market is open and whether
-              we&apos;re a fit.
-            </p>
-
             <div className="contact-direct">
               <div className="sec-eyebrow">Prefer to reach us directly?</div>
               <ul>

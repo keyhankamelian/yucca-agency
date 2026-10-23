@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Reveal from '../components/Reveal';
+import PageHero from '../components/PageHero';
+import SidePlant from '../components/SidePlant';
 import StickyCta from '../components/StickyCta';
 
 export const metadata: Metadata = {
@@ -15,37 +17,37 @@ export default function About() {
     <>
       <Nav />
 
-      <section>
+      <PageHero
+        eyebrow="About Yucca"
+        title="Most agencies hand you leads. We hand you booked estimates."
+      >
+        <p className="hero-sub">
+          At Yucca, we run paid social ads, direct mail, landing pages, and an
+          in-house sales team for home service companies, especially kitchen
+          and bathroom remodelers. We bring six years of experience running
+          paid ad campaigns and turning ad spend into measurable revenue, and
+          we work with one company per market, so the strategy we build stays
+          yours.
+        </p>
+      </PageHero>
+
+      <section className="sec-center">
+        <SidePlant plant="bloom" side="right" />
         <div className="wrap">
-          <div className="sec-eyebrow">About Yucca</div>
-          <h1 className="page-h1">
-            Most agencies hand you leads. We hand you booked estimates.
-          </h1>
-          <div className="about-prose">
-            <p className="about-text">
-              At Yucca, we run paid social ads, direct mail, landing pages,
-              and lead follow-up for home service companies, especially
-              kitchen and bathroom remodelers. We bring six years of
-              experience running paid ad campaigns for small and medium-sized
-              businesses: managing budgets, writing creative, optimizing
-              funnels, and turning ad spend into measurable revenue.
-            </p>
-            <p className="about-text">
-              We work with a small number of clients at a time, one per
-              market, so the strategy we build stays yours.
-            </p>
-          </div>
+          <div className="sec-eyebrow">The difference</div>
+          <h2>Booked estimates, not lists of names.</h2>
           <p className="sec-lede">
             Anyone can spend your money on ads and forward you a list of names.
-            We built a system that reaches out to each lead right away, gets
-            the estimate on the calendar, and keeps following up long after
-            most teams would have stopped. The leads were never the valuable
-            part. What happens after them is.
+            We built a system that calls each homeowner within minutes, books
+            the estimate on your calendar, and keeps following up long after
+            most teams would have stopped. What happens after the inquiry is
+            where the money is.
           </p>
         </div>
       </section>
 
-      <section>
+      <section className="sec-center">
+        <SidePlant plant="joshua" side="left" />
         <div className="wrap">
           <div className="sec-eyebrow">Why we built this</div>
           <h2>The leads were never the problem.</h2>
@@ -70,7 +72,8 @@ export default function About() {
         </div>
       </section>
 
-      <section>
+      <section className="sec-center">
+        <SidePlant plant="twin" side="right" />
         <div className="wrap">
           <div className="sec-eyebrow">What sets us apart</div>
           <h2>Three things other agencies skip.</h2>
@@ -108,7 +111,8 @@ export default function About() {
         </div>
       </section>
 
-      <section>
+      <section className="sec-center">
+        <SidePlant plant="rock" side="left" />
         <div className="wrap">
           <div className="sec-eyebrow">Who we work with</div>
           <h2>Not every company is a fit, and that&apos;s fine.</h2>
@@ -136,7 +140,8 @@ export default function About() {
         </div>
       </section>
 
-      <section>
+      <section className="sec-center">
+        <SidePlant plant="joshua" side="right" flip />
         <div className="wrap">
           <div className="sec-eyebrow">Our standard</div>
           <h2>Done for you doesn&apos;t mean hands off.</h2>

@@ -361,9 +361,10 @@ header .wrap, section .wrap{position:relative;z-index:1}
 @media(prefers-reduced-motion:no-preference){
   /* .js gate: without it the content is never hidden, so a failed or blocked
      bundle degrades to a plain visible page rather than blank sections. */
+  /* Content is always visible: no hidden-until-scrolled state. */
   .js .reveal{
-    opacity:0;
-    transform:translateY(16px);
+    opacity:1;
+    transform:none;
     transition:opacity .6s cubic-bezier(.22,.61,.36,1),
                transform .6s cubic-bezier(.22,.61,.36,1),
                background .2s,
@@ -488,3 +489,30 @@ section > .wrap{position:relative;z-index:1}
 .side-plant--right{right:max(8px,calc(50% - var(--maxw)/2 - 230px))}
 .side-plant--flip img{transform:scaleX(-1)}
 @media(max-width:1280px){.side-plant{display:none}}
+
+/* ---- inner-page hero + centred sections ---- */
+.page-hero{padding-top:56px}
+.page-hero h1{max-width:20ch;font-size:clamp(36px,5.2vw,58px)}
+.page-hero-art{aspect-ratio:1600/430;min-height:200px;max-height:420px;margin-top:clamp(-80px,-4.5vw,-16px)}
+.page-hero .hero-sub{margin-left:auto;margin-right:auto;max-width:58ch}
+.sec-center .wrap > :is(.sec-eyebrow,h2,.sec-lede,.case-note){text-align:center;margin-left:auto;margin-right:auto}
+.sec-center .about-prose{margin-left:auto;margin-right:auto}
+.sec-center .fit{max-width:760px;margin-left:auto;margin-right:auto}
+.contact-sec .contact-direct{margin-top:0}
+
+/* ---- case study page ---- */
+.case-grid{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:left}
+@media(max-width:820px){.case-grid{grid-template-columns:1fr}}
+.case-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:26px 28px}
+.case-card h3{font-family:'Fraunces',serif;font-weight:500;font-size:20px;margin:0 0 18px}
+.funnel-row{display:grid;grid-template-columns:120px 1fr;gap:6px 14px;align-items:center;margin-bottom:16px}
+.funnel-label{font-size:14px;font-weight:600;color:var(--paper)}
+.funnel-track{height:26px;border-radius:6px;background:rgba(122,139,63,.12);overflow:hidden}
+.funnel-bar{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--accent-deep),var(--accent))}
+.funnel-note{grid-column:2;font-size:12.5px;color:var(--paper-mute)}
+.case-table{width:100%;border-collapse:collapse;font-size:14px}
+.case-table td{padding:8px 0;border-bottom:1px solid var(--line);color:var(--paper-dim)}
+.case-table td:last-child{text-align:right;color:var(--paper);font-weight:600}
+.case-table tr:last-child td{border-bottom:0}
+.case-note a{color:var(--accent-deep)}
+.contact-sec{background:transparent;border-top:0}

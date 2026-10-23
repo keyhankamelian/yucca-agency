@@ -222,7 +222,7 @@ export default function Home() {
           </div>
           <p className="case-note">
             Client name withheld for privacy. Results vary by business and
-            market.
+            market. <a href="/case-studies">See the full case study →</a>
           </p>
         </div>
       </section>
