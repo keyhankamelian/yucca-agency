@@ -13,140 +13,100 @@ export default function Home() {
       <Nav />
 
       <header className="hero">
-        <div className="yucca-bg yucca-hero" aria-hidden="true">
-          <svg
-            viewBox="0 0 200 260"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              {/* trunk */}
-              <path d="M100 260 L100 150" />
-              <path d="M100 190 C100 190 88 180 84 168" opacity=".7" />
-              <path d="M100 205 C100 205 112 196 118 184" opacity=".7" />
-              {/* lower rosette */}
-              <path d="M100 152 L64 132 M100 152 L136 132 M100 152 L58 158 M100 152 L142 158 M100 152 L72 176 M100 152 L128 176" />
-              {/* mid trunk branch */}
-              <path d="M100 150 L100 96" />
-              <path d="M100 120 L74 104 M100 120 L128 108" opacity=".8" />
-              {/* upper rosettes */}
-              <g>
-                <path d="M100 96 L70 74 M100 96 L130 74 M100 96 L62 92 M100 96 L138 92 M100 96 L78 112 M100 96 L122 112 M100 96 L100 62" />
-              </g>
-              {/* offshoot rosette left */}
-              <path d="M74 104 L52 96" />
-              <path d="M52 96 L34 84 M52 96 L30 92 M52 96 L40 106 M52 96 L52 78" opacity=".9" />
-              {/* offshoot rosette right */}
-              <path d="M128 108 L150 100" />
-              <path d="M150 100 L168 88 M150 100 L172 96 M150 100 L160 110 M150 100 L150 82" opacity=".9" />
-            </g>
-          </svg>
-        </div>
-        <div className="wrap">
+        <div className="wrap hero-copy">
           <div className="eyebrow">
-            Done-for-you growth for home service companies
+            Done-for-you growth for kitchen &amp; bath remodelers
           </div>
-          <h1>
-            Qualified estimates on your calendar.{' '}
-            <em>Without a single phone call.</em>
-          </h1>
+          <h1>Outgrow your competition.</h1>
+          <p className="hero-tagline">
+            Qualified estimate appointments on your calendar,{' '}
+            <em>without you handling a single lead.</em>
+          </p>
           <p className="hero-sub">
             A complete growth system for kitchen and bathroom remodelers. We
             create and run your ad campaigns, call and qualify every lead, and
-            book qualified homeowners as estimate appointments directly on
-            your calendar.
+            book the right homeowners straight into your calendar.
           </p>
           <div className="hero-actions">
             <a href="/contact" className="btn btn-primary">
               Apply to work with us →
             </a>
           </div>
-          <div className="partners">
-            <span className="partners-label">Certified</span>
-            <img
-              src="/partners/google-partner.png"
-              alt="Google Partner"
-              className="partner-logo"
-            />
-            <img
-              src="/partners/meta-business-partner.png"
-              alt="Meta Business Partner"
-              className="partner-logo partner-logo--meta"
-            />
-          </div>
-
-          <div className="stats">
-            <div className="stat">
-              <div className="stat-n">$60k</div>
-              <div className="stat-l">
-                In signed jobs for a bathroom remodeler in 30 days, from
-                $1,750 in ad spend.
-              </div>
-            </div>
-            <div className="stat">
-              <div className="stat-n">1 per market</div>
-              <div className="stat-l">
-                We don&apos;t work with two competing businesses in the same
-                category and area.
-              </div>
-            </div>
-            <div className="stat">
-              <div className="stat-n">0</div>
-              <div className="stat-l">
-                Long-term contracts. Everything is month to month.
-              </div>
-            </div>
-          </div>
+        </div>
+        <div className="hero-art" aria-hidden="true">
+          <img src="/art/hero-desert.svg" alt="" />
         </div>
       </header>
 
+      <div className="wrap hero-stats">
+        <div className="stats">
+          <div className="stat">
+            <div className="stat-n">$60k</div>
+            <div className="stat-l">
+              In signed jobs for a bathroom remodeler in 30 days, from $1,750
+              in ad spend.
+            </div>
+          </div>
+          <div className="stat">
+            <div className="stat-n">$583</div>
+            <div className="stat-l">
+              Cost per signed job on that campaign: 3 jobs from 30 leads.
+            </div>
+          </div>
+          <div className="stat">
+            <div className="stat-n">1 per market</div>
+            <div className="stat-l">
+              We never work with two competing remodelers in the same area.
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section id="problem">
+        <Reveal className="side-plant side-plant--right">
+          <img src="/art/plant-bloom.svg" alt="" aria-hidden="true" />
+        </Reveal>
         <div className="wrap">
           <div className="sec-eyebrow">The problem</div>
           <h2>Where most campaigns quietly fall apart.</h2>
           <p className="sec-lede">
-            The ad is rarely the only problem. Most estimates and consultations
-            are lost somewhere between the click and the calendar.
+            Most remodelers aren&apos;t short on demand. Their campaigns break
+            down in the same four places, and we fix all four.
           </p>
           <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
               <div className="ix">01</div>
-              <h3>The ads bring clicks, not appointments.</h3>
+              <h3>Generic offers.</h3>
               <p>
-                Boosted posts and generic campaigns optimize for cheap
-                engagement. The people who respond to those aren&apos;t the
-                people who book.
+                &quot;Free estimate&quot; and &quot;10% off&quot; look like every
+                other remodeler in the feed. Homeowners scroll past offers
+                they&apos;ve seen a hundred times.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={70}>
               <div className="ix">02</div>
-              <h3>The page doesn&apos;t match the promise.</h3>
+              <h3>Low-quality ads.</h3>
               <p>
-                Someone taps an ad about one thing and lands on a page about
-                everything. The ad, the offer, and the page have to say the
-                same thing.
+                Stock photos and recycled clips don&apos;t show your
+                craftsmanship, so they don&apos;t earn attention from the
+                homeowners worth working with.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={140}>
               <div className="ix">03</div>
-              <h3>Leads go cold before anyone replies.</h3>
+              <h3>Too few inquiries, and the wrong ones.</h3>
               <p>
-                Someone who filled out a form a few hours ago has often
-                already contacted another business. Speed is a big part of who
-                gets the appointment.
+                Weak offers and weak ads attract price shoppers, and not many
+                of them. The calendar stays thin, and the estimates that do
+                happen rarely close.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={210}>
               <div className="ix">04</div>
-              <h3>Nobody follows up after the first no.</h3>
+              <h3>Slow follow-up.</h3>
               <p>
-                Plenty of appointments come from the third or fourth touch,
-                and most businesses never make one.
+                A homeowner who reached out a few hours ago has usually called
+                someone else by now. Speed decides who gets the appointment.
               </p>
             </Reveal>
           </div>
@@ -154,26 +114,30 @@ export default function Home() {
       </section>
 
       <section id="services">
+        <Reveal className="side-plant side-plant--left">
+          <img src="/art/plant-joshua.svg" alt="" aria-hidden="true" />
+        </Reveal>
         <div className="wrap">
           <div className="sec-eyebrow">How it works</div>
-          <h2>Four parts. One job: booked appointments.</h2>
+          <h2>Four parts. One job: booked estimate appointments.</h2>
           <p className="sec-lede">
-            We handle the strategy, the creative direction, the editing, the
-            launch, and the day-to-day. Expect a couple of hours of your time
-            in month one, and less after that. Don&apos;t want to be on
-            camera? We can shoot it for you.
+            We handle the strategy, the scripts, the editing, the launch, and
+            the day-to-day. Your part is to record once, using our shot guide
+            and script. Don&apos;t want to be on camera? We can shoot it for
+            you.
           </p>
           <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
               <div className="ix">01</div>
               <h3>Paid social ads</h3>
               <p>
-                We tell you exactly what to film, edit it into ads, launch
-                them on Meta and Instagram, and manage the spend day to day.
-                Built around the cost of a qualified lead, not reach.
+                We send you a shot guide and a script, you record once, and we
+                turn it into ads, launch them on Meta and Instagram, and manage
+                the spend day to day. Built around booked estimates, not
+                reach.
               </p>
               <ul>
-                <li>Creative direction and a shot list</li>
+                <li>Offer, shot guide, and script</li>
                 <li>Editing, launch, and daily management</li>
                 <li>Weekly reporting in plain language</li>
               </ul>
@@ -208,16 +172,18 @@ export default function Home() {
             </Reveal>
             <Reveal className="svc" delayMs={180}>
               <div className="ix">04</div>
-              <h3>Follow-up on every lead</h3>
+              <h3>In-house sales team</h3>
               <p>
-                Every new lead gets an immediate text from us, then follow-up
-                until they book or give a clear no. You also get our
-                Lead-to-Client playbook for the calls your team takes.
+                Our own trained team calls every inquiry within minutes,
+                qualifies the homeowner, and books the estimate appointment on
+                your calendar. They connect on a human level, make people
+                laugh, and leave a lasting impression that matches your
+                brand&apos;s values and tone.
               </p>
               <ul>
-                <li>An immediate text to every new lead</li>
+                <li>Every inquiry called within minutes</li>
+                <li>Qualified and booked as an estimate appointment</li>
                 <li>Follow-up until a clear yes or no</li>
-                <li>Scripts, templates, and a no-show checklist</li>
               </ul>
             </Reveal>
           </div>
@@ -225,13 +191,16 @@ export default function Home() {
       </section>
 
       <section id="results">
+        <Reveal className="side-plant side-plant--right">
+          <img src="/art/plant-twin.svg" alt="" aria-hidden="true" />
+        </Reveal>
         <div className="wrap">
           <div className="sec-eyebrow">Case study</div>
           <h2>$60,000 in signed jobs from $1,750 in ad spend.</h2>
           <p className="sec-lede">
-            A bathroom remodeling contractor near Downtown LA wanted qualified
-            homeowners booking consultations, not a list of cheap leads. Here
-            is what the first 30 days looked like.
+            A bathroom remodeling contractor near Downtown LA wanted more
+            booked estimates with homeowners ready to remodel. Here is what
+            the first 30 days looked like.
           </p>
           <div className="stats stats--4">
             <div className="stat">
@@ -263,9 +232,9 @@ export default function Home() {
           <div className="sec-eyebrow">Our standard</div>
           <h2>Measured in booked appointments, not impressions.</h2>
           <p className="sec-lede">
-            Every campaign is judged on one number: what it costs to get a
-            qualified lead onto your calendar. That number is at the top of
-            every weekly report.
+            Every campaign is judged on one number: what it costs to put a
+            qualified estimate appointment on your calendar. That number is at
+            the top of every weekly report.
           </p>
           <div className="commit">
             <Reveal className="commit-item">
@@ -302,6 +271,9 @@ export default function Home() {
       </section>
 
       <section id="fit">
+        <Reveal className="side-plant side-plant--left">
+          <img src="/art/plant-rock.svg" alt="" aria-hidden="true" />
+        </Reveal>
         <div className="wrap">
           <div className="sec-eyebrow">Is this for you?</div>
           <h2>Who this works for, and who it doesn&apos;t.</h2>
@@ -315,8 +287,8 @@ export default function Home() {
                 </li>
                 <li>Compete on quality and craftsmanship, not the lowest bid.</li>
                 <li>
-                  Want qualified people on the calendar, not a spreadsheet of
-                  raw leads.
+                  Want qualified estimate appointments on the calendar, not a
+                  spreadsheet of names to chase.
                 </li>
                 <li>
                   Want steady monthly growth instead of feast-or-famine
@@ -334,8 +306,8 @@ export default function Home() {
                   today.
                 </li>
                 <li>
-                  You can&apos;t approve ads or respond to handed-off leads
-                  within a day or two.
+                  You can&apos;t approve ads within a day or two, or show up to
+                  the estimate appointments we book.
                 </li>
               </ul>
             </Reveal>
@@ -344,36 +316,39 @@ export default function Home() {
       </section>
 
       <section id="changes">
+        <Reveal className="side-plant side-plant--right side-plant--flip">
+          <img src="/art/plant-joshua.svg" alt="" aria-hidden="true" />
+        </Reveal>
         <div className="wrap">
           <div className="sec-eyebrow">What changes</div>
           <h2>What you notice once it&apos;s running.</h2>
           <div className="svc-grid svc-grid--2">
             <Reveal className="svc">
-              <h3>Better-qualified leads</h3>
+              <h3>Better-fit homeowners</h3>
               <p>
                 Homeowners who raised their hand for your specific offer, not
                 people hunting for the lowest bid.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={70}>
-              <h3>More booked appointments</h3>
+              <h3>More booked estimates</h3>
               <p>
                 Qualified homeowners on your calendar, ready to talk about a
-                real project.
+                real project. You just show up and close.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={140}>
               <h3>Faster follow-up</h3>
               <p>
-                Every new lead hears from you right away, not hours later and
-                not after they&apos;ve called another contractor.
+                Every homeowner hears from our team within minutes, not hours
+                later and not after they&apos;ve called another contractor.
               </p>
             </Reveal>
             <Reveal className="svc" delayMs={210}>
               <h3>Numbers you can read</h3>
               <p>
-                A weekly report in plain language: what it cost to get a
-                qualified lead, and what changed since last week.
+                A weekly report in plain language: what each booked estimate
+                appointment cost, and what changed since last week.
               </p>
             </Reveal>
           </div>

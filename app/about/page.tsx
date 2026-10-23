@@ -98,10 +98,10 @@ export default function About() {
               <div className="ix">03</div>
               <h3>Fast, never careless.</h3>
               <p>
-                Every lead hears from us right away, and follow-up continues
-                until there is a clear yes or no. Speed and consistency
-                shouldn&apos;t mean sounding scripted, and we keep it that
-                way.
+                Our in-house sales team calls every homeowner within minutes
+                and follows up until there is a clear yes or no. They connect
+                on a human level, never scripted, and always in your
+                brand&apos;s tone.
               </p>
             </Reveal>
           </div>
@@ -149,9 +149,9 @@ export default function About() {
             <Reveal className="svc">
               <h3>What we handle</h3>
               <ul>
-                <li>An immediate text to every new lead</li>
+                <li>Our in-house sales team calls every homeowner within minutes</li>
+                <li>Qualifying each one and booking the estimate appointment</li>
                 <li>Follow-up until a clear yes or no</li>
-                <li>Getting estimates booked on your calendar</li>
               </ul>
             </Reveal>
             <Reveal className="svc" delayMs={70}>
