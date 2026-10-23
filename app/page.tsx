@@ -50,8 +50,8 @@ export default function Home() {
           <div className="stat">
             <div className="stat-n">16x</div>
             <div className="stat-l">
-              Return on their total investment: $2,000 fee plus $1,750 in ad
-              spend.
+              Return on their total investment, including our fee and their
+              ad spend.
             </div>
           </div>
           <div className="stat">

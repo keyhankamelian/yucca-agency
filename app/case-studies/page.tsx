@@ -28,9 +28,7 @@ const NUMBERS: [string, string][] = [
   ['Jobs signed', '3'],
   ['Average job value', '~$20,000'],
   ['Revenue from signed jobs', '$60,000'],
-  ['Yucca fee', '$2,000'],
-  ['Total investment (fee + ad spend)', '$3,750'],
-  ['Return on total investment', '16x'],
+  ['Return on total investment (fee + ad spend)', '16x'],
   ['Return on ad spend alone', '34x'],
 ];
 
@@ -63,7 +61,7 @@ export default function CaseStudies() {
           <div className="stat">
             <div className="stat-n">16x</div>
             <div className="stat-l">
-              Return on total investment: $2,000 fee plus $1,750 ad spend.
+              Return on total investment, including our fee and ad spend.
             </div>
           </div>
           <div className="stat">
