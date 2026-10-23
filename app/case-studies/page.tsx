@@ -26,10 +26,12 @@ const NUMBERS: [string, string][] = [
   ['Estimate appointments booked', '10'],
   ['Cost per booked estimate', '$175'],
   ['Jobs signed', '3'],
-  ['Cost per signed job', '$583'],
   ['Average job value', '~$20,000'],
   ['Revenue from signed jobs', '$60,000'],
-  ['Return on ad spend', '34x'],
+  ['Yucca fee', '$2,000'],
+  ['Total investment (fee + ad spend)', '$3,750'],
+  ['Return on total investment', '16x'],
+  ['Return on ad spend alone', '34x'],
 ];
 
 export default function CaseStudies() {
@@ -59,8 +61,10 @@ export default function CaseStudies() {
             <div className="stat-l">Jobs signed, averaging about $20,000.</div>
           </div>
           <div className="stat">
-            <div className="stat-n">$583</div>
-            <div className="stat-l">Cost per signed job.</div>
+            <div className="stat-n">16x</div>
+            <div className="stat-l">
+              Return on total investment: $2,000 fee plus $1,750 ad spend.
+            </div>
           </div>
           <div className="stat">
             <div className="stat-n">34x</div>
@@ -68,6 +72,32 @@ export default function CaseStudies() {
           </div>
         </div>
       </div>
+
+      <section className="client-sec">
+        <div className="wrap client-grid">
+          <Reveal className="client-copy">
+            <div className="sec-eyebrow">The client</div>
+            <h2>A bathroom remodeler near Downtown LA.</h2>
+            <p className="sec-lede">
+              A bathroom remodeling company based near Downtown LA that wanted
+              more booked estimates with homeowners ready to start a project.
+            </p>
+            <ul className="client-facts">
+              <li><span>Trade</span>Bathroom remodeling</li>
+              <li><span>Location</span>Near Downtown Los Angeles</li>
+              <li><span>Channel</span>Meta ads</li>
+              <li><span>Period</span>30 days</li>
+              <li><span>Ad spend</span>$1,750</li>
+            </ul>
+          </Reveal>
+          <Reveal className="client-map" delayMs={80}>
+            <img
+              src="/art/map-dtla.svg"
+              alt="Sketch map of Los Angeles with a pin near Downtown LA"
+            />
+          </Reveal>
+        </div>
+      </section>
 
       <section className="sec-center">
         <SidePlant plant="bloom" side="left" />

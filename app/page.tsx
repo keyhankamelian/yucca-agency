@@ -48,9 +48,10 @@ export default function Home() {
             </div>
           </div>
           <div className="stat">
-            <div className="stat-n">$583</div>
+            <div className="stat-n">16x</div>
             <div className="stat-l">
-              Cost per signed job on that campaign: 3 jobs from 30 leads.
+              Return on their total investment: $2,000 fee plus $1,750 in ad
+              spend.
             </div>
           </div>
           <div className="stat">
